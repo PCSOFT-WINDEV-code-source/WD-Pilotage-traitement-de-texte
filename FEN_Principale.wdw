@@ -1,0 +1,1047 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_Principale
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_Principale
+ identifier : 0x29da1aa639e97f22
+ internal_properties : CAAAAAgAAACfwYSlM9/6ljhLHvTpu+pUfzO7cdMPl4wiIhGb2ZA1bgIXofwYBeRUGL8Fj9+liv+KaNGUl+VmnIh5UYdlyEeJEabYKQ1iKKVTrEli9x4dPCWXdTemvY/Nn6k4MSniPbyaCJraCEIwHHk61Jbqxg554g1JifsdkOTEZaAW/tbiYWmpLY78CHwMnjmDsENV6Fr9VtUDmTax8KxOsKqk3cuxgktFqc5KSvvPMOm1JPN7+q7W9YYtfwMsrpWMcDusO7hJeFnsK2HnYbDhAvGg7iygEMidQIkJL/n13ZCxIm8S8fCU/CiaesjVQHPwpaaNfXf6DKyITxC6s4ketnw8gOW52IDzWdQ0DGHHozovttnRcXdJYYOi1+RDVWpcUr6OVBaH0wlZvs7jmD/gvCzBFrx5m+cX+xT+T59zBttRuDf0/zndDXj3U30tHhoJqwlvJzGUd+EGw5Zhixr2Ddu51ERr1c7k+5rpv5gPkt3RjBw8Fj7yCmp23A4rS8sszNJqiV+uFchyjhWYXeQl3yeMXmKHAf6vHkVg+V/eflnlLawEkXhyGbB/kG+lgtICUPKP0dk2YGnKnnDz71zpRlvSPCKGtnod8vHDemHab1u4h1RP9xyyLpH2lIknBgFewKCOzZCijkVWb9/qz8sHmlXx7S2C6+3k91JIcXJp3TxqmdD25WO22EhyYGf7MtQFkaxaJMeJ7w8Q/4Y6AxppAK8dWi7fRAQ/An/BAg==
+ properties :
+  width : 360
+  height : 315
+  widthClient : 358
+  heightClient : 261
+ controls :
+  -
+    name : COMBO_TAILLE
+    identifier : 0x29db1c6c5fcc6b69
+    internal_properties : CAAAAAgAAAAloB1c4oRefcrKaTojgl6FYP5O3bZ3hExw+o/rx1Qf6B0AMn7oYrux7/xlNrvdfDwuhVeMbOFDxwS9t9meQLbLqPScfed6GpHkdVTaGjVttceXipp9+Wmz1RA9Ky3Yg+NUKjM21ldwRQqAkEolGJmYep6popv0qVljLrunIHX1Gxu7nNwKDsbZ9rRUfvCVVr4uQ2t8z9ZjL6fZaey7c1pmZmT7uUAPlseqG6PxjpawmynqfKVkTL0mqffnsEPfz05qzGJZrSKdjgNQ5QEnm9uiN/6Z5zIHetVhAXb+a33ug8tHPbnetFnsI7froWO7mnRdzVZpwejPmRnebTAjY6PcT+guFrd3NIwykFQsVQ82hODapi05n3fBm9/Anr1RhVbSbRPPvR3b7Rln2VbUsQf/K5d/gJMeLRcMLP63OXpMKtdQtS5zG63VUF2nLsQ5GZxvHdo28utHk5TPFPgDzqlFCVzuU92mpkyCQDG81uW7ag8tVYjUkWo1D87nPNfiGSXrN2p5kfW6OqBhcX2EhbaHsuF9Hgleo9lrD+psJ3sIdA09ws5H2oWTr3EHJb1iHY/O/OSPfn5GiRRLx4j7cv4+0R+LD0kaqlH3XmBzu3HqXv6ph5WdpoYvHWH8RArT9CwY2grcg41RPYbOS+vnTI1GehIouFPjX1rVbFEbRP89WCVJWjQSRNnriFuppspEosJ7/vOnGerQRkpZ7+vikDVG1Sp5vAH7RZ93Oiwxlh1Zg1PqfQ/PYHqbw49J5SrkaX+/inVoazGbB4W/yfI9lDRbPw25lcy+nB5MAMFZGLk4vQUjzAy1QXIxBhNJ26RZQ64krMHOjIoMyLQ+2gCJt6yZKnMgWHMnNTttgpF44NkdFvHM3ecmj8zVpGs4XCpDESR8dyMuX6FFlSIoDeW1kXHzBDCMpih/DiTvmJWVAnycr0KKq8zj3QxPjGvgjEsHBjQVA0ua9CGu+7E2lzTfbPLDeqO1v4fIdWqimmDXTHvPyTA8hrtd7/BV0c2moXszhZ4m93sWylcrMwBXpFUW4g6QhL2KW4oO44GKBXGTcBNAbsohgHvN0VCCxGdn7vPsrmx5KvdeqCHGpPn0l+21JEkAUizyE/gVEYWhl/5H33/QoALBtGdycxBLJ1Ve5/mPo2JsS/xuoRad5bS77eEJBycPJfTb811VyA/scVJLRLJSEj8H11XaUqk/ftzEp7q/B/zSYMDNToYI3MD2ftANoYj5xRJtSQXBN/Xfdc/tmjbPkp14+fm6NdDaBadDuw748SeHKPBYE/fmlcfWMGA+yamz4ktqVcEe/iNE/5v5oJ1O0G32iWlhXrJDVyfPzZ5O9ccCjm+MbbctYeVEzLzZpB0gHNxELMdKj9HwFMsoIDIdHH5vA8mVBlHvaW5Qi15DLo3nJwZpz9gHM3K/YA0/Eko/TNamD/Br8UX/Q1qIbYbjj1lIl0bOkVTJQbUfytOxBQW49duc867DNby2gSQj2kLwTJi5pxJ7XRiktPeXczAL2BUzyUd5p8BzedY1oL01C420fjomYQnd/8/yUI3Ehcl/aTv89pRvqePfCpELsowZA0ZQajDdw3ogiF28/gNtdDsganZChSeyMPEsoT7tlQRryEC1jJEENIiuvbkiLL5zWhMTvXi3qUEI++xG+8beVcJfib0NW7In0f9UQisuipsVpQOAufycAIo0xuMFckKyo5cqUXHY9lFyiQQWAQe1GxbRo7YABEspO1fWy/bw1hBFrarzSwI2pnxkl27TGu0MTYGFdHtJ5hd1Q+cBvjKYpRVdMYCT+Izke6aOehaknOg9xu51X37pWWgW+FIuLJs9xDfqImlYT41Y1tIRIiJmRbyyUL+GI4JkvP4f2X7G8/qed3Gz+a9rzWQM
+    properties :
+     x : 277
+     y : 72
+     width : 47
+     height : 22
+    dropdown :
+     internal_properties : CAAAAAgAAAAOEK/2FKAF5+7sNMhkAYNrNv1Qxt4aPIvPIwuKUq7lmphyolYi8jv9UZqbs14rLXHuj/M6mnyGHZEzaWE+MjfXUf3cLyQBMKDZmdynDpfqLY7QTjADFpBKyzZIXTAtt9HonNxAjYHrok3cBOSMluJTWnF8GtRLmALipNTdZR1MxCXqabaNqfUYMuZFilzjEeb+bRfQAZQRapCuIkow1kOANCMhUIey+xai3dnMd6ija+NNA+08M6217VL8TNGZm3qxAJ1VXTCLipdqU2pmi6Aju4kXmOnOKaseHq2SK4IMfowzDZV5qVYoYf7nDxIE2cj98hHqTao4AYs79hpEwljO7MoYMmgNa1Q407DR2Id1K7alLPqzwfTu+KApu+M4dgI8BSAQeOTuuYDSzaQQdRPNx7zP2CIchIueqj2Cf5j/RBvVsX5Y0/O/k10tss6v/eacO8+J1RPAgTrZeXzkv4m/9SAV4fbFCBhFmHnztUckATA+usBzmsw2TW6uCGfi8O8hA0MpaGQVxVC6h1LEFVCulD/FvxEvMVzY+fqb4ejGonmZeLVvPOAAauPxTK1DeXrsVAIJmipTix/XcByQMF13rT8axt0YEjzp3gqgKAu97X8Anb+XF8L5h9v8Q8yR8VMIxQPGr4XMS097aAu3NTww1OYsRGKqpckaaaN376a2/YfoDebTBPJLGS/AzVSxPdRXtbbX5hryj3qEEfps9IjzC5l/aUoOz2ZiuVz/ZzIt0+tKfDuThsK7EbI7CTy+BvYCGiAZs6QX/xIdr9RZB3RDE7Qbzyvbz5kS6TGj17PwSSLhaQE9OAAG+whovr6ZJ8bvJzMrO94LO1scRp2yhLIh4WPEqLbPQkyP7dhcArTDS2sVHlB7Sr+nvYPyqQ==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        internal_properties : CAAAAAgAAAAR4wfafeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LTqDBb1oBUoqFYspVnsE60EgOB85lr03qqQYoMx8MviQw6PWACF3N+5DzwNXd+pyjMSjik87bY=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Régler la valeur de la taille de la police
+         	gpclEditeur:RéglerStyle("","",val(moimeme[MoiMême]))	
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : IMG_Couleur
+    identifier : 0x29db1c6c5fce6b78
+    internal_properties : CAAAAAgAAABS9GIyIPDgfbs9I/apOeVYrd2FdEmER7WejrW4J0rE2cUa/5H0Mwqnau9VdI5s5W/OvjfEnsBwrdOX+tbADmsQCrjabEJnSaoGhMnJaV0gcIObDpF0PAcTtoMBS9MkZFsaCRFWL9DCOLrn1SxYYL2yxEa0wUwgAqzbBr07cTzXEc19o/jABElsP4qJdSkkZ60OCbtUVkzHTVehAoGYSQ34CMaAn+E5Xob7F9DODg+tF96uiqOin2G1K/VsJT9YOHIXY+Jutpu3qy6RFueO8BKR1h/L1/S3VtT4dq4RVAJlqvgAydLOwzhh7OPdwrienVP13lmFWVW4yz9yrmQl78GcvnF4kTTVMVeLUjZ4IwzfUNiGMt6OnIy4pFqfJiiHsqeZBSspO1cBRPpMVgD9UGJv5gtKbCzxIgl6VKt/60koqKm28uMELkBxL9ARWuZu88q4glGsK3Xu0fqj7b1u710211+3OWw/o+I16Khdkayml9yj04fZpo014dqDSy35qI4J9r5XXAiOGIk9HRBdCCHGLS4APRPrWsdDEC7dEDL1m2RPkPXGbhByTRJ8HXf6uvpfC0oo8FJOBEgplZ/FgmkjruvW2Fb3tqdMKYy9k9PxFezTAtFBbcK7ryYYwxCB6A7GytK1DDyFX5B7nM1M2tj/wfYfODYmcl8ZD9mclKlX6Fvgan/pjgpk0ftPu4GchDjN8rN5zRqM3qmk6WpiMiSJp9pI0CyNxatRE7bicpCJIm1vplkwnw8KOP5WcTtLbWwpEQBgf/QikpjFU013HagTpOBArpsgPy7aY3RA2eg2IuTiKv4bfT4tRXOLjmMZhVDNH2jiPSMmBl6CmCVzq2COCae98mLqRzpO9Y+BdPb75OXbNglk5CH+MaqMK/A+9Nw0lULEkvyv3/lT34Ee5hHd2caTg4kmX9bHII88Xk79LhhRQpHsWepDAb5BU/mWDqE2ZN1zOFLJgl4SGNCkAKdlt0DtsiitTVoUjmRg58NefgRbTSY=
+    properties :
+     x : 329
+     y : 74
+     width : 18
+     height : 18
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         dDébutDessin(MoiMême)
+         dRectangle(0,0,22,22,inoir,inoir)
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADPqZ4V/aKAYuvAa87g65ipR5HEkAhRA98r1ncM1HEX77UA5jRzvKEhHL/v8Bwq/Q6b7qLc4NhM/oyjEqd+QjAK81sOXTt2GlpyVIxGdDQa4AGzcrX4bfiZXiZvBm0bqVqbn/mL6GdODsASM2g=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Convertir au format RVB		
+         	nCouleur est un entier = RVB(0, 0, 0)
+         	
+         	// Sélection d'une couleur
+         	SelectCouleur(nCouleur, scInit)
+         	
+         	// Régler la couleur de police de la sélection
+         	gpclEditeur:RéglerStyle("","","",nCouleur)
+         	
+         	// Régler l'image
+         	dRectangle(0,0,22,22,nCouleur,inoir)	
+         
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+  -
+    name : COMBO_POLICE
+    identifier : 0x29db1c6c5fd46b78
+    internal_properties : CAAAAAgAAADyerPoZUMojUO8Nuq4zLTVdTwz1rDGD9YbuW3SamRh0DIwnLP87Nc/ObglOqgjeFkAi6SZX5RMTJedqaGixnKv5LSR2Q3h6IlyVy8gqEsg24XeLEB7vH9RJF+cQHyt5NrKQIzwv/HolHLpsL7qMDaIgYMSoEjA+REmXkJqrdt1kBeulm1THMcsZxQW39JFpw3ylxr5+GuRfMpjR7oyQzFj2dYQzsO41GcDMFRxInQn49l1cDHNsAEtiTNRBaM+Jr9ZjWp+8fRiMNgz6PBpkKRwvb99qHy9VJ2DYS8f0mxgjVxlLsY9+21IfJ4T0sKvTaPdyy0h+9X4RlRicT/w2mNsR8Ot5/BFOCGTASlh2F7mdlIgygKacB8yxS6wTl35FzlMTDi2glndEjaD7iZzuma/OzTpejEHgM8LqjrDigAbA0aRVpnuzH6NWx1nMMQTpMbjcdUih1db8LTR9U/u2xqwxMELxKo2r/Q5pK8tZgVtCRf13BBUZyLmf163sfBowpMHXcHY8GBDzqtrb8fqJsiP8xJP+S58b1myVR+7+fH9onRxkJAhPOrMc1sft2aRC4lmnZaKq6KkzQNO8iaQx0XWTC6R1Ap6y2YB33hjFASpu4/PvLWMhwtJaTcB5/33KAr2ODZDkQy1kMU5Z8ABFbLXr5Ok6s4qN1vkLMg3CrpUyEXFizz2xrnrNT+wKCe6sNAhnBlbsv3YHTpx2k2ae1F/ip6btEGSDsw7narQ1CD24bdKS9XEGE4ZhSRs6b/T3ycXrJAFWOGEhvYyzaVPlb9PvZM5ovWwD0J6wHTlt0zWbQpfsNa9zXVxJDt/RGO4dJX+pf5qWBnWLB1kkBmMZYkz24COAYkFfsruqSmYgfehtqaNmdiyAcIthi8/PGQIZcAbhxGSxnh8yEP44KAnrQHfT58/4iBa6qicMHQPxd9OoGkJwXwQx1RQ7qP3S3u65v+q2gBmoj83CqYv9XCdtX2x8NsZ+3SX0isS/4YwMY/eNTjA7J3l3aQOSL9utB7PYqDvUD4JI4QzswYak3mX48if+b9dynQZN45uO797MuBAndO0aOOBZZBbpl5e6tsbwXKfkWao4VQWYgvtlOsq9Duh8IGXw7gc7kTesFJv7uK/udibaa4vkM8F96IYFG2030q4bPAGAXrvz9q4HA7qXQCR2Fhr93Ig3GFWZlsSJgNL+wmEVEregAqjpRf+vsn1uFg0vWVPBD+mFAFbb0gQyZsRZEmtH7S4ovy9EHMbgcfKL4J8UQP1A7zAWbFh/zwVVLRsnNhS1lF+SatKGIf4Qq/ftiZx3kr9EEC277S2lL98xJ8/He/ReBzZwUln07HRzJz0sRIjquQUZmRpU86OWw/NjcpXs9FXe7pMzDWj0P39MRbUjoSyjrsQ06AG8vwDlKpaIGtJJBWnKojIOwLjg0nJwVWctzsmvrlryCETlxD7eoK9gFMOz6oQCbP0L0ynhUL/SchfLYoXEbdHY3wOWlmJL9s1POTKyvlZSEBFOoxvQqT2J7jA70+4kwy0mbatagSV4XbZY/lB8lpwnCEwE24NpuNIyyd8R21s6uPBUxbntWamgckEzFxUgU9uxc9hJZNGPiMZYAkyC8SlBl5npBtD5X9wkmqi6FcMkuSifZjrtNkTjYRjnOtv2kmvbsWP71iL0qRJr0YEN3Zi6D+5N9o1ftQrpRKz0hdp+aVli1vzWLcmHf8GfIzNSENmC9JgNcudty7qEGSXObKvbgFLlA8qFqUym9QBZG7C6SGFC5sK1HM9vBXzH32YSiVW3VGDz7zeloAfvAEFJx1lfh2p1OHareHRhLxG2MTLfxCanHFBYz7XuDu54WBaKshL5gJ7kIdW
+    properties :
+     x : 88
+     y : 72
+     width : 183
+     height : 22
+    dropdown :
+     internal_properties : CAAAAAgAAADn4Rxc8OUqC08Cr4js7XHwH00ZdGp7L+OtUWDwBp9ZiFAoygf00jnF/Jqr8G1nCIDA6ne/Rf4QCfCrZ+RTKCQJ+uoE/G360s/taEUrKJBO6ubpdyRQVyOHc73EgKP95FnNuknCzYF/hWnvoFrNL+hXcZpkowkn/lmMWDB3ytqiLLXQRWvZSpcgBKVUDG3Jgbj2FcXkF2mWPwsgSvRDgEmIOJUTvn+xwE9yjslUb7xHgwLJ889LlbHNJZwXJWoPkvSt/fY1giEKbMY2FN0kk0olzIK1AfK23Hh6TTr+1zKbbOlFjfiz46bO4Fo5lZ66VqKe+MnPu+TseG6iQpIvbSNQ48J6k99ItiNWijgTbt4rd3iopXqSTbjLssbUuae0rx4lCo8hRKTpyN+lkgXbUbZymtb1Kcd+i1Jc0QAXsMl8dnDLlLtfpQM3U9MoVaagalEZQDx09npDclXUoPFR0vImap0Y5Bes91maNVbYcrpFIIH7HVfuJ6FttA0BD6wtLeqq0BI4Rb/cChfh+veF1AcfR9ayqOQUPAk9TrcQ/ktlw1j4t+oEZ2WHbaaIywIeIGNH+6c2i8GCqGYm44sHKWR4XDbjl2jNMf0kmYHNWepsFgaTtqBUUgOY5jIboK+u0KTLaAbHsMT9WlwYRTwEeAF7gQNRpcv5cgRZENY4iD0pMtoDKCNQR7vietBVjC/WECmKnK2ATzENuMVXoH+PIeWOJK4e1jslyAFHZr2oLntU7FKFP4SktQd+LJXaWE+LPff1AZ2QloHcIvH8itPELGdoxttseHSSeuaxltG4GVl2OGBnOLmMJMA1kFo7oA==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADBiN86aqG0qDJjPI5v5tBgDxM4c73/Zvq3Be1hTJI2kOzhjIQNWDPdFHOecCe6zlOk0zDNT6MJR8VQr8QsG8/JWOk61IlZKVGKztl9Nuj4t9rCBATE6xUeYG7649CsmBoIhwkdXS0b9OklAbm4UIej5UgFnwMg7jr+PPdxmgx2
+        code : |1-
+         
+         // Initialisation de la combo avec la liste des polices disponibles
+         ListeAjoute(COMBO_POLICE,PoliceListe())
+         n est un entier = listecherche(COMBO_POLICE,"Times New Roman")
+         si n=-1 n=1 
+         ListeSelectPlus(COMBO_POLICE,n)
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        internal_properties : CAAAAAgAAAAR4wfafeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LTqDBb1oBUoqFYspVnsE60EgOB85lr03qqQYoMx8MviQw6PWACF3N+5DzwNXd+pyjMSjik87bY=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Régler la nom de police de la sélection
+         	gpclEditeur:RéglerStyle("",moimeme[moimeme],"","")
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : BTN_IMAGE
+    identifier : 0x29db1c6c5fd66b88
+    internal_properties : CAAAAAgAAABHh6ERWdeW3tPCQTNWFF+YzofmNs1ILeX+m8jrxRT2pBKMpVqOMHfkglBzxTgToCA27S1jqvzdhf4nKGUlWxeGn3P0mzzSFPpEMJGG4oVZWNvEaMPGps7yltteD+819iJD46enALUPa2uRkf/BoGAh/QaPfOCOaLme1mQSzcmYRe7kRKfbhdOgIctf8/8VDLm+277+aQH3jaG1KxqZvqejpszrfKNsMbR9iepG31AHlqg57o5RBlgVU98Dpx+ql749SBz4JT2N1M/tckDplPqhBA7kFiUb59h5junbtsHCIeVCb/tB0tTadL20Ua59PQhyZzbdyoH9dfQ+9DCza1ZfNyFDvlaN/6UVOgli1bwnMVPYZbezG8kuDenQ86Me3syygb8+cI8D4IYx5ESjcRBWKAcuvL/3i/WDTeSSNSlr3J+pISnal4v1DjnOWJGDmFjJUHrnKk5ygs3q3n7f1oQWAjnyRG1+TfrQZQt9mBRDRw9iBllQX2V9Nn1s7T03Zd9Ji+m6SgFnJCdNwGge1zqNC7XBfIlN2XxjEgzrBVE18o75chINqGqGGnXDZkkHUvaOWEzg0AcfpDw1GzS+hhpFoC0Ode3CifoKJnu74RNaDeTKMrI7iV+2IN6Fuqpi9TCCtWGIQxnOPU0cNMsop8aVjve6EJkdcW+jDLs0BDHwe3z0KHhKi62NGMIGbw7hyNtsVfce11FIZ4jYrcSPPeQeOK5ls58fcMRcnZmoyDAa0l5x7SeKcHI1lk0zfI6I57uFerwEhza6VEhzYOFCDVDU+uXfBeGnoAVJAYGK+DQscD6J8nVDhKTbHPaETmFWYOJ4TUMx3P7zUaWIbszeT8loI641GMweBBhHdDCLqSKMDTgnUE6Jm1r7dSDaMneLmvPkSErSw2NgZVEqTfynEbYR3Q0XCCbpvTBz41VIsunmvjIBJA27kM8Nh+Fzya6PkabRs+Mww4dDRZrps1+5Fne0cdtwcFPR/DKWqfjR3IhrcQlLr/0V501oq63XnJvcaKs=
+    properties :
+     x : 159
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABxQxSfk0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0NDqcTRY=
+        code : |1-
+         si gpclEditeur:DocumentActif() ALORS
+         	// Insérer une image	
+         	gpclEditeur:InsérerImage()
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ITALIQUE
+    identifier : 0x29db1c6c5fd86b88
+    internal_properties : CAAAAAgAAABJ8aeAtkdvkXk8G9AcpTUFMGXnzoc9VqdquMXsXQFwplR/cR4JtYqdtkX4nNc4igvTPcOXfDx60ihCJe5hTvWs2ijnmzFKjK+M8qDjGPUeMwV/Pu2rskaeidI+TvLUJh4bz6ouaIP6XZcny5V4iLTeQOE0TnoloLFHUHu3G0jaXexPyxzDzMkKVWybEtHpHPh2Cif+1fKEEgG+574OPIMFCFVBYSLJs9EX6vlvjywPCdXyJtY2k6FoDslrGzxsO1cxY3JI5j8KQIhad0UzKAUU0sM0NKYlR9f8RKbL9vhRGYWXjkxDV2QbNr1FKkn/Ikty8uI8MaVlAINKazpjEPv2iTuw+crKqUrvLCaDb0zQTbOnGvbqD+BD7k+ZG2GmpKOzzpQqEpHoEwICTCAoWV1gqZ4L/9KZDxozRZ78k49VOKVGPuDr8IrVui8MadT85xyNpMFyv//T0v8KClLAsZfFC4EZf3OcOyn9tf7V9xkRsJzsyUahTvvIpZ05sBZfEND9Tng3401V9yfthcIe3mzqmKy5KvU0vYqPzpVBG3kyI0lUrj30LiU5tF7wBUn0ClY8jh8E2cUI4/DvdbeCiQzF/EpdAiu+F1AMkAkJppI6MjKSOkEBWT8IGcmWcBz7W/rCvF/tWY1qXK1tq5gyfuWsB4r3lGlk/KtKqNlbu7ZnemxPFHH0sKV4TinstTFOwUFdxk3wC0cmPD5o57u8uU3/5oc2BN//jB2mR0hm+2zqELhPI4D+G6wZY3zErVqPUlaqliFwo6PBJOo6FrnFBA5foGidu0c9sAzEnu0e+Zb2uL3VvvOS4Tw8ZmuPFmk8Clrf5PMyJtFQ6kzUm/TAfAAZ8fSX6HUlnPw+nXwjWBiejGr5y/oxPW2zRCpLQlJn2a6Wg6zZr54BQgt7Ah2FBMFHegcm4qsGbGk3CqBm02HGe7U58eoXEuln5XfRq6KH3u1jcrZUgbFvsUOekNsTpIRrACdnwzW1Mg==
+    properties :
+     x : 185
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAR4wfafeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LTqDBb1oBUoqFYspVnsE60EgOB85lr03qqQYoMx8MviQw6PWACF3N+5DzwNXd+pyjMSjik87bY=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Régler le caractére italique de la police.	
+         	gpclEditeur:RéglerStyle (iitalique,"","","")
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SOULIGNE
+    identifier : 0x29db1c6c5fda6b88
+    internal_properties : CAAAAAgAAACpjXPq0nYWAse6uruXbuZfDU5R3YPdg+pwc22mCpXnEkmFJc4LUCbBEx/mbW3aejnZk/h1UGoCfvYnbNUmZv32+D/SITLTIa7nN2LeqL++BrgNcKgG3F9zejJax+uWcN7kJdSOnX6tonnsDkGpQcanI+NADMTnsMd1Ro+tZjXxq0DJMTdHG164JZIuEt1802of3qkE17TCvJYf7atdUwe3ltV5EeN3Qj5Rgi1eGa4GVj0pYVjtV81smbHBK6nKKdsX7l8Vq3wyP4K3w13gpgmrl8qivQVALKWOtu9mMI4pSsqhkj1gSP/QnBQIAlktrSdtJYGw5GxncWSGXow0ekey6PhpZzrL/k6QwW5rf5J5X+qLrofNrSb9LvYSWwUWyI6Q5GVN1aIh8QVzl/Gb9390VD2ewP4DrnYp1g03ACoZN37CTalri+ia4QKIoD1tDIB570in35mmrg3h3IWerxJsJcr9syPtGXDhXztULxS2OySTy/5/qn7tFcrWyy7xMD/YDi2Et5Z5KaJDaA3fJsp5+vx7j9C0Ll9vQ3YrrKEvJiXAJtXQcUnMZGYUSB58ozFS9ttKGwqEEOLHufpr7e1w9CaF7IHRVz0oRKlaGWrBlWbOwk2Rols9bX/grefloKfgkpkxUTa67frXC4oQL6ekVLVO3ZZUweUBXSpvMUURmFvS64ZNtEQ2NTqpAT/LQXXY+XzNbHX/ROEDJvEETmRbNUuyYy6gr17uMiIgN5nPNwRBQefZW7G3iXoWjhXBkRUE8pEYR4ET7xLk+/+FWUQt5nz/WFid/pZlmlhcnlO4/qy5M3E9tEBnW0JTEeLWqbBhTRWeccb0OJyloX7F7HrupOkKd+4qWqCzIKvz0sJ8XSDOI/OBcBjAgIq444eL+kka5wqhMrDmQLpAJKHmStojBucSsgjRlM2UPA95VB/HtADYYPizVQPCY7xCMzeF12IJ0o+rxktqfAWJAPQXXiv6K0mQ4t/qxeuB
+    properties :
+     x : 211
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAR4wfafeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LTqDBb1oBUoqFYspVnsE60EgOB85lr03qqQYoMx8MviQw6PWACF3N+5DzwNXd+pyjMSjik87bY=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Souligner la sélection
+         	gpclEditeur:RéglerStyle(isouligne,"","","")
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_COPIER
+    identifier : 0x29db1c6c5fdc6b98
+    internal_properties : CAAAAAgAAAAsTt59r9SbjO827vOxJt9Cb3Cub1a2pnsUqejixYwnSGQrnsRIVamUGTNChQD8ceFsMA/IG/yygDyGf5EQtDbu7IeQNld9lG8zr+8BSbNaaD/STuUvi30YoSPGrGEGVkzM3rq0ybEpjlTrjU4R0zcmgU7/nWfdKCvu9bO1MSMb+0Vjo1yh07sBSg3YLgvpCU4u6/9nBOysn38S+//JPMMBEZmzijhKuGyzViX9dQZKRlM7edBA77GUbApEnEJeq+e3Ht81kcfPIKAUhbrsrOX9SfAzAFfiThxkBsSMBi5koxgQTanXSeKNnsszamH5rgRdBdais39bvw1BpLZRtS48+NYCLBvTZ1Qj1LdDCOc7isihv0RlRtQJnrHnSLDUPbn7fCDXtN6nd75fO3bsRB+iv5BMngr8oXGxs63wlh9ni9P0Di0b5JZyTiTHC6Kt4K3xiJCziUhGc2rFvSGUJX0KVMnRNaCJXdhajO8XbRt43aaF6/LQc+rsMj6rZeStZ3qAIA2sIksUkeAdU68RaDpQe9pB5xEQjRClzfjEWlVqBf61SHFNGzbtXPhSxGLlVuTqKYynoHh7fEFxiy9lkJ5LqPd0CSieiIxG4FiupaEMxbGnoBVoBbyU2rnVbTHi13ztuF0b8+wKRrriO9srIeCRAQK42wtknREIskHlPELNlroXOnbNGywATvDL/qkbbvWbIRYG2rasrb83x+ZV2+HcgNF2VXUMLRCECSml/JNFtRyWb6c60AzlC7QTxu/5ISlIfl9/pBTHvjXnLvnavGTRXlGm4s+rIsv36V9jirMwOONHk0DkwMozSaswjK4t0pBgO2I7C9KitR5fHOq4fR+Y4gOgC51cAp796HeyHpm7ph/NtEi6tWoi7MNbZ823EADfxGAJ7NXQ3/TdVBRKV4HF4Q4zszqrzhQ+9hjd2yRBdhWSTxeD1Q245x6oDt9dq6UjhXcCJYhVXWoBBqWNgU0O/ryTwsSi6Ep2EiSyHxgzUZTI7rCPFr+XiPhrU7c=
+    properties :
+     x : 276
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+        code : |1+
+         si gpclEditeur:DocumentActif() ALORS
+         	//Copier la sélection	
+         	gpclEditeur:Copier()
+         	//Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_COUPER
+    identifier : 0x29db1c6c5fde6b98
+    internal_properties : CAAAAAgAAACV5wm6+D5DNAM09CsJ5gv8+17yLZGL/TLzvknzDPn0S5+e2yPj1BBzYLjLel9VSsgzZ3ST+9tPd32zjOwHHn8qvp+D/aVrlvkVWb3L6x1ssukUOEPZQa+qyw1k/tPwqKYumERSIyeLWM5de2g7xVmQW+hpq5FzWjXYR2G3SxV1Xaed7corYa0bdMdmsD3Tk7DY7andXuJOqenMKYn7jhVrw0tlaMrAyk4VwFtHXzj00EW168y+fC9cRMB69JoK/6krEOO/tflnFDyWH1L0wBknWf77xh+EwqzwwEpIEj7wHfi+ZQ/nP9bJusVN/tUdGiJVE8I09xUDG1mjTn6hac5SgBzyEsM131jffu3/vHO79GifYw4BfMSRgpMFBMyAUdMvLvxRlGDbt9a1MXYU1Ds4Nx5QKEYSGSl9fffkLV9Hy5M0Di2bpFZyTiSHi6ItIK1xiNBzSUhGMyqFPeHUZf1KFAnRtSDJHdjaDC8XbRu43aYFqzIQ82os8v6rJaRthxpgwG3MAut08QD9849xSFpwW3qhB/Ew7fBFLRikujUKpd5VqJEtu5ZN/FhypMLF9gRKyezHgJhbXGHRK49F8F4Lv46vrGFHP6OZtcUpJm7JAoyanzRFWte/If5arBbr3AlYAzDqILHVIWFDRMrQqmkisKFnljTVTEynk4IAvQeW322C9Sn2FNt/+a0gYfrIS8rOXO29F0NH7M6YoMl2sBqdwzzJZJopAINrIoowdciOfgfJsmKbufNIrmlYhbQCjp7fFdoSFQV87nktPJOc2lbHnFd0DMl5/IVdh4Ud7PFy/tE1idKOhlyl34mWLuiDhMY+SUjdPfjER5zVyvz6+xmmWCmmnfdC9LDD1j28oOdl3B2zSopcczQM6kk5mZ9l4lZ9mhY7tnty8dr7KkaU/WsjlyRx7cTp+DY4OTpn08yJyp/s1feVx/vcAvGDIwRYNjLm0BL/MqMiSGGA3bYuoBxfaVeOz8Hl/bPvEStXxiO+3ME9E71mfRhwUTEU6g4=
+    properties :
+     x : 302
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABxQxSfk0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0NDqcTRY=
+        code : |1-
+         si gpclEditeur:DocumentActif() ALORS
+         	// Couper la sélection
+         	gpclEditeur:Couper()
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_COLLER
+    identifier : 0x29db1c6c5fe06b98
+    internal_properties : CAAAAAgAAAAzgXVrTqZAfkTwVd9SR9kttSmKBKFDGT6nndgn8aJj4P8suLEJW7GXos7mMiT4uctmKUrXPEJ61SvBgythNva3eKVAD1GB3mj3mJWCUQec/iQSM+mIhAhcbfJnG7EncxwQs7r27fgnDpXiUVomnr41nsRYXyYV9265XJXeNOJ3bUrcOXFp+ezYIF5ilpa6fxl77rX/5x7UKkiyiITxtk8KHAEUcM3LemKhmztWWstdHhQx4+MDFUGxCP7LUI8Gf7gEm9f5Tczk01Oo1/xPtCTfAiOQMae9uP7/gM3X6lJdHdBSyrEQh+D4XwQr824mviAjKxPCEz/nDo/T1WjWdGLIq3Xe4O5OCF5j4Kjg/R+UhERBjA1DtW0etLOtyhSC9g3mkKuCLOJYVB9TmO8SSPVfSC8U3EghVJLL6PBP5/LDoqWEBGCcoE4z6IPjFtdqZA5qQD3tgPGw6Zh+TFUKY8d07oKAmgbraBCyBeKjvIEyrCMT2z8O+e0rr3b9KsiTwkGVWNANciC3UfM05MNFYIlt2SSi07PJa6tLaSVCmlGnu7153LjkM2/ah9HXWo0DGNOnkhbeteyCwg3bM5MfPZu06xLoi0wsrVZJ26agSBB9orA/9pMQeQbyGIo2enV4SUV4IlikNqLEKQQWersx7PfNfSQP4BQY0m5klZxr0jifVpVwmrZpm/MT+nQiGH8PP0HsseWH9MJTk0866pNgrG7bX9n6QsMMT5aKepzEaVxhltv58WZNg42ItCoWE+KXhPiVGW7htQ51PiD2JQcuHYW0ZyD30IYFOtybIrEBDFtYVNQeL01O84szC18CFNIMoWEqwETonyuSMv8ubKik0JMl4lhT/u8xvuTy06FuP8o87qZHJfgOzSjrZeM09R7P6MXSXav5XoIT/cD5qHw2/vh9OKceQaDTvXEI6J4dZ+1Je9n91x/vmkUW7mztLSwD36YV6HrSL6vKMeZBVwda5KtHIekAjAwqZ4AN/YRueAHYl6NrHYddTCPn6VE=
+    properties :
+     x : 328
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABxQxSfk0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0NDqcTRY=
+        code : |1-
+         si gpclEditeur:DocumentActif() ALORS
+         	// Coller la sélection
+         	gpclEditeur:Coller()
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_RECHERCHER
+    identifier : 0x29db1c6c5fe26ba7
+    internal_properties : CAAAAAgAAADzv+tkYslf6TEjoG43fwmPssHhoKgb/V+jWGcknaCU3XjTjAuD/UEdu9SNhvvUHqCaqf4S4FdgTlO57Wkeg/YhCMj/rgtQK0le7Dbdwm2o1RT8mp8+LkQgas9WtmDvlEES5QDv5DBriz1ukcxYSS4OmJ+qcpOPMS0JFVGn2eLoOUuDd/sA/GnmejpSmj3H7s2gJJ0AzBqQg/p43I74Dxasg1VDD4YOQo01jqw6pvzeohxKgmytQFeiZu4deh39UHX6nv0urbA5nB4SjctnsM9ZWDY2kAGiMiHWVmvMI2+FlvuR717AQtcYP5hgMFvus40N9KGK0n7X5E3XU6SvIKgdcm2h6ut5wtLOT7PjosLymiuKzDOADXh/7bTuph9SZCp8UfV+d8JoKxLZv28E3IyuToCPrPOivqySCWxGNP0khufjU4VMCGw+gjmiKGxybFHEmYqDBW2BmtjsxmuPMtI9zMrsfBKQE/pS8O9sWrn4Jy/z2sWpcfKBzWNOQyqYafYOprHv4RCH9tAeo8dxqGB8tX2z8IehXBgNXVR8vzjztNDQ5oQHeesMdP56rLxGkQI26XR1LzOyBhDXwf1SJoeOgkhPxessr11qFBRroZPW3WpqjAJI2/ln0HIC65ocF9Fzk+a33vRgpF3LMPnqU+KpBNzuEfIJbX2RnegZlaHoXMkZ+Zeq+55oNN+px8cb2idUprCUuotmBqGCmVq9wlLUtDrlrDcuKqDPkfUk7XPOQ3xRtKNsbzXBWtqhqphJ3kmDYSCXaiCD5BtXP+Sn9u0362aPneWM8dBlz6EUNNnqu27Q7Qo2XSHgZ1FRA/Jmd6KJ8zJyej6abrg5zkJzQexVaFVUM0TfU/SKPXSNBSR3AsNqKM/S8V3YYrSSIOv/uqEVOu6BQmmUX3PGeGJGRkoTOYl4EjncumhXMgxmMeLvQV3JTjGF2pIEdNgJLkKr3vE5q5M355apXp7FNugDvz+GLHErG3p/fK9376UceAHKXi5O5IuNMBUO7m7j72bCKra62oEndaSUxPH53WKbL0Q+jWzKZ49BHxE7
+    properties :
+     x : 58
+     y : 72
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAA3AdZdVau9svuAG+6YI0BZP6HEEPjRI6eT/u/EJLHnh0Wobgxr9Mmh7C+fkLSCBS7jHnJ8AHiQQlgHTnMirkwuh+8SYT9iXs7uaNhyWKCmdAVHlkks+SxNmuq7wsEnlb7/c20fnEA2dnhai9A=
+        code : |1-
+         si gpclEditeur:DocumentActif() = vrai ALORS
+         	//Ouvrir la fenêtre de sélection
+         	sTexte est une chaine = ouvre(FEN_Rechercher)    
+         	                           	
+         	// Tester la validité de la valeur retournée
+         	si sTexte = tab ALORS
+         		retour
+         	FIN	
+         	
+         	// Lancer le rechercher/Remplacer
+         	gpclEditeur:RechercherRemplacer(ExtraitChaîne(sTexte,1,tab,DepuisDébut),ExtraitChaîne(sTexte,2,tab,DepuisDébut))
+         		
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)
+         SINON
+         	// Envoyer le message d'erreur
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_IMPRIMER
+    identifier : 0x29db1c6c5fe46ba7
+    internal_properties : CAAAAAgAAABKR2XnMo7vccsGO041eM9Rq26CJewD8o4e9K3dkQ+P3Oa9cCaXEH/dtOSewVW/teEhQhDYi3xaOqJPrHsEYY/Z+b+l2NTJlhP04jt/nBSfDEOEKJSV6PEjph4Rl4lvCieYlFLkxRp1wFR7jehXOhNAiOakhxu65ZyA8368QPabh/zcWNNObgYCRzORCdumA7R+7KUT6OMnlo22nBOUnmqZs107o3y8ks0Lmcn+ZdMKeh7tQ5cfjWUVyW3Z3HqaW5qI9xmy8r161OHcgSABUMefFg0dpLoEH5cuT/ivbKIYmprDhvlRFJ4m8YQHA3dqTJfPfSNCd526X1/HqcytlXs8B5qEVBhLbwsNnwxAwn4K2ZqO25MDL6qTfmt6K0IElYgrjRrALdTDeHE7mRt2m7Bj0n+03f6UtYeUGXbxPEOCKhJZMVYVKeamu2y5bMd9DzdQ1Nqhxc9vCV+ql2pAhF9jdFn0Ng5kk37jp78yApc2eUKSzUSssSAp/ATSGK8gIHIJBF0cDeBHMDoXV5VTweKS2AixlfcIkGRW2UuI69UHkbMWN0uhEZM7G2L1M4IXY8QZVMn98hSWcqTBMmYDMIPv26Y5H6nOp1OOf91H+KiiqQZck6+jJMFeXTimXA02pyhJHH3jDQ6rTJ8bgzstDfHleRcAUC6cEsfReBRMqBkpT2TIG8UIHyPxX9kAQpQY40mA7MRaqyB6IjJ+cG6DPJIRvXlz0f5U+GpJdBtwCKMLWBbhqZv3+xowQz9LODaYc+IKICRUZvbBWI6pWDV5AWmPlgw/Av/kL4oAZgblTouR+FYEulBPHtNoIREOhI2d7vaeMSQU2Ov8iDc+OuiCXasZRNH1uesfysTa6x9hT5UsdcSRBPCkCFVULGsl0yfw8qTEMfZwbLTlB4sYz55q+wO9Rduyq/7gkHZ9vQE50F+uGoZxmcUXd7Tl5MM34Ye3W+jPSwHFzfrOx6Q5rnFwc5v/zcAvqIDi6jRZypSn+1mDXiv1F1XyyJWqilAIO3mYSllorH8qvin0zhgwe9+G6q4GRcQtozXXt7CfX9h0ud4=
+    properties :
+     x : 32
+     y : 72
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+        code : |1-
+         si gpclEditeur:DocumentActif() = vrai ALORS
+         	// Impression du document
+         	gpclEditeur:Imprimer()	
+         	
+         	//Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)
+         sinon
+         	//Envoyer le message d'erreurs
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SELECTIONNERTOUT
+    identifier : 0x29db1c6c5fe66ba7
+    internal_properties : CAAAAAgAAAAIcxZVfFp2ab+ul9mM2YpAKB+Vpk7vI2tFbIv6lWBHpSfG0M5u+QDcialj7yRHmRjZ3XpiRUWZXy2v6cDAae00CSckjOhGuM32oje3bYgxA99cUrDLLhrsekomG7QDO/R6KI2LFb3cM18ZemtkHyTtu8bWyRIjZVVkQWuu7olqOHc+FKnV55jTNxk+sfC60g7KAUikraTBmrf1+peQMG2WRdVuaaqpmXrcP7v9i+k6j7MBxW6sU+vQ1e7RWCcleOOHNqf3x/W3zBSSydZpZl6DAlfizua+Ucr/tH27uyFT5bcBpW0z4E22IX8ewx2VDmEqWqu7pFz0gQoUQQoRMyAn2Pp3nQMO32fUzbzPJNitWvdTps+4nnAcNe1fsUoGaKXOPXTua0WlBirFS4tlg77FRrThfZSABKI0OX812Bhms/YjzJvnITq9LjXk/C0e2FSr3TNZWYtPUmE3febz8ce5LbbdIkZUiYVpT5vA8W9oao1jJAl8r0Iq2CGQ5f1e8iPK4JE3ADxTWKH1tnTYpRDVb5RATlYxq57GQIOAnzksM0KjWvUXOAi1Ygw0jyEO5937G8oDf97JyvOk14mlEpxKafztMDLAACpXHebysnq+NFyvsCXg7nLdFGLG4zfC9xhB1CFHx7J0k8d9vqgG2rnYxs8b4vRNhRsGOjFhvhTagrBf9E2kVDJKjb9KwmzUMDS4MDHbuc8NjN63BfLQEwK1R27JFxX3wQ6vKXy6afxQa8tu5QknmPSFgA4YMV2a3VJjaOJvqxq2FYZ6etZkVM3/uL9mCtKw/Qi4uombN5u2j7nEFBFWrtVMGRSSUGuNjr+D/K6pfH5RBPfYqWVsuEtZjog1/LL18XzF6zZWMrDZ9Lyos3iWv4jlnZME/QczbF58y98YrQ23KYIM29aDe0O+/7fwJrvX0FdRZe6uMti/upqNiRolHKhKyCWKXVHfJi7SBWsGKQKDNDMs02U06w2PQHbCGsgmpP85v3/2jIJ5a87Z7uURKtbOH0glfBbz4zb8SNNhRE4KmvMCUHGR
+    properties :
+     x : 6
+     y : 72
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() = vrai ALORS
+         
+         	// Sélectionner tout
+         	gpclEditeur:Sélectionnertout()
+         sinon
+         	//Envoyer le message d'erreurs
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ENREGISTRERSOUS
+    identifier : 0x29db1c6d5fe86bb7
+    internal_properties : CAAAAAgAAAAz1eS24XAD2E2yrpcS47mrV2pFRn2rRLvr0eW5v9S15NQh8FKxB38coK+WLPjHNmi1iGMpxa3ju1NYi4afZ/+hepCmeO2UACt3CXAnx4R/ikrbLPemsePZEqWAwlmlEyW3PGjIWO5799udpptq4LdzLsd1yhsX4/AxaIU14GbXJNoN1KkNCgDxSigqZUELfIB33ieGET7bvSAc0SPFwjxxpBpi8AS6mTVkWjdmZ7V23ln3c9atKrSsTeeKJ7v/kc+WMqKd4n2OIHyodBDUxO/GsLyUbzZJ+34LNrx/5ihTrQiqUl3DCxHqfTHnbTbzBrGtqt2ld52u2NnhBbMNg1EwXn0SmZ6aedL9ImLDQNR1Vvi98sGz9MLT7TX7499Lj2T6Vm0p4i5i2zqoAf4DClIZMY5+waepQt+cA1oieqp/sJZaejvkV2K77Mar4s7VAMw0GnF3PnZ95gUEtj46ZIpbmoAwjic6gW1ZBrR9cByn/8x4VNuUOkGgC+hsOUrTBshvmrtpjDSTZda2Yh+gXTLFSrIF86w0x0jx4iUPxzZA7FTfGW4sa+CsUqeYw8YeGG9312pPTdwufNEJ/OjgzIuuljNofdcgw1+pNiJPtFc2jxJpeo4S7DmNyZx+JIj1CAAuJK/6UDl9ktdS6+wKBwlFzoeo2V2jo0L/ZK5JbPjf6QjzcgfMdK244VUIhzQTY4diMBk2VIzvB9dxX31YY/xEkVRClLUobwFvX0G2S8yhONx6m2GEYFCmm6WWSTkWoz3Pvkx1TdpQf7TlxF3ybJAX0k9EHbwubMIreXUQVfy1wZLNNVCwa9BSy0UCe4T2+hyHiCW6/37A8LyOY1GWtmgAyPYc08CoMrTrWM677Xt0wfGAu3jsSs2FkkeRQFtNYSWzdBUiWk2ui9xOBJMyJreieUFS0gTKTH4JCMqUCTSVFS2wurNR8HFonahct+FJ/eVGonJ/NQx74sH5pOm3XHCELHelyLAWNeRcVLx3LPyHtf66LMc=
+    properties :
+     x : 60
+     y : 42
+     width : 27
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAhEyRvYyU6BtHat/gkL27/+UuOPBZ3ZzNhmLM++FVJkQteQCCNKt1RUplvprSKg7zJfDikJkrFGWHw24yhP8unDuYHajp3J2nLhfUjDxkt9TRut/6Tihm4u9uowyBI6BPSThKYN9LEhEpsncY=
+        code : |1-
+         
+         SI gpclEditeur:DocumentActif() ALORS
+         	// Enregistrer le document courant sous...
+         	gpclEditeur:EnregistrerSous()
+         	
+         	// Réafficher la fenêtre dessus tout
+         	FenEtat(FEN_Principale,DessusTout)									
+         SINON
+         	Erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OUVRIR
+    identifier : 0x29db1c6d5fea6bb7
+    internal_properties : CAAAAAgAAAByCaQiENN+e0v0JDmF7WNWSujmpetWvJ5DFWvk78VNCknyVx7EJy046mVV/guKJNb9pJzPsPQkICNjQBBnIQsS69HPvGv0I/S5w7chmw0uEFEqZcvF5g6vkZoRtszQnNR9EA1xfxZY4RzV5xV+uHbENP7qX0IhgtIa9/LWmk4nAdAY0QjRzYSZFm9FBvGxNdZ1JW/09ECPWWd8OpRgH/wCLFG35Xbrj/P09e5CnAoOlSLmXUasfjUahno61BX8gFWaRJ7cvlVV1rhF4nTe40eG9zmBylCkJywmq54gIGHsIhFRDLMfYikMCUjrKGVH+cwHkKFZu52CtsTDAo5ijFc7EfX4Iz3SYQYglpmgomcS4Wa1xvqVzCBgHRmGYls5Vwokt7KjDz6QAhA8nLIzd54DKngp9E5DBpKz4h7gBaEZDcKQ30blJrdnQ+QEMALiHNipuSZrvnhBwh/HM1cwFXKqd0W8CYdvcGqx+302GdtC+LutXqShxkKXnV3C1ji/Ob7YEaIBu4TOtFMgtNYyHWQutlLCBYSP+/3JeLd+gDI2Rip9SARtFTPykDNwEy4p74pkVgp6SNL4VMzFqN3/QOnDNlvioZulLHqGOq2ftwIGHGsh16V6A6C7xNwnqkoXse85rK5DnDE4A638Q1bZLXchYqMa0h2Q7io40e+2PsQ8SWAQu3Sc4kA15EemAjdmvyCcJhFTgxWnYvJnIt4Z8mJeXv5+Xt4wTH+A4Z1VbTJKnBhVmb6ngAGvBoFYDpIust70OSEfEGz3N03QrI+C19/U6vCrYv3t4Ybe+/3u97bEyXzGKdP5SuNM5zLAhGXuEE4ER1PRJmmHICKsDdM8bsso/5QOeSzXpKJUjx6SGoZqvjOE61twXUAYWB98BY+nNUZ1fqFX0RWKtfu81i69tyNxxaVhZnJ6DK61bJqG/GwAodYxhvQeaZCBjJhJmha5mRWk/X8bsfMsyzQiGNTC3B5n6NyXZoUO
+    properties :
+     x : 32
+     y : 42
+     width : 26
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABHMVEpL2FBgmV2A1wo05YvLac2AJ77L1/dPCdqTJGJEdcaCNytVuVt9nVzigi228RN+FiYhr7jN8OSGUobNdGxuAwVQDxt9VdlD3ux+b+LF7b8ZWRFIF9elR1WQaJG9t38JBiGQZ8ZJ7eKu+A=
+        code : |1-
+         sablier(vrai)
+         
+         // Si un document est déjà ouvert
+         si gpclEditeur:EstOuvert() ALORS
+         	selon confirmer("Un document est déjà ouvert.","Voulez-vous le fermer ?")		
+         		cas Oui
+         			// Fermeture du document
+         			gpclEditeur:FermerDocument()
+         		cas Non
+         			// Le document ouvert ne sera plus manipulable
+         			info("Si vous réouvrez un document déjà actif, il sera en lecture seule")			
+         		cas Annuler
+         			sablier(faux)
+         			retour
+         	FIN
+         FIN
+         
+         // Ouvrir un document
+         si gpclEditeur:OuvrirDocument() = faux ALORS
+         	erreur("L'ouverture du document a échoué.")
+         sinon
+         	fenetat(FEN_Principale,ActifDevant)
+         FIN
+         
+         sablier(faux)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_NOUVEAU
+    identifier : 0x29db1f1b9e7ee76e
+    internal_properties : CAAAAAgAAADqwUz1AO+iuJ5UcxjjvJcgkIWBGzgZJyAlddZ3XOS90ARcvxbIXJHSx34dzu/2gUXbKPgBtbO+1s5AI8qJFGLReq5FlJ4DdRrs4Bd+sf/61lBU2whO5rLOypqrjCIPMHq0GZuF9yz1oWIpj64H+htTDYY2nGYloWGcjrsoUB/n+5CISuUJa6VIifpUGIoraNwDaVYMrZYNia5XKB7s77n+EbcwY9JFvZ6sRB74YJ3HoP1UMorb6Kx4M85FYnucVRF4xP7+dhArIEp7vnL+neh5J+u2Ho5vlAbncprZ9KURGvQ4wThJ+9fzunsMfKPyteuZw2v0+pjp0uGziWbzi/NyHOOdL5RN+MmXD5J05Qc13EXzeX9leQRulMAOl2gunxyIOWVjHsz85cheRfvgPOH4T3PfOBmrEcEjuxviLWZbQ3DV/9OldjoEkPanhwrHYIixgtnIrvTbOwCnQtgiw8v1k+W0cDhVdPX3/wi60PifuG6YyrMuecHV3Cq/m/o8P2CHo5qj7Wy4b7V4T3JwB7lrxK5+zUSeqnOMvZE8Ui2sszGvTJIlI+V7teB/1vsN0NDoOla27299Zua2yHfRS9868bDwJ8SUk0Z7fgHn/NRnTP2WyUh/Obzzby0mDhgWk6SYz9bfn4cEQG2yLMvF1/j/DwOoPrnBaqLoUWl10sJT0T7GuhKQF6y8l+sZ/2eJs1qYIDZWMTKfsgfJl+Dy/G6JUZL25GaanSY5udKVhr757R8SQLCAOqmziU5OAV533q+Cv0zzsu+4u4NWAyeWwt3HdinmA7eBmI0w1w6HAVvW6cV+P3tnkcJksl7XCI4gW60UykCUywp9NOhnt1BmZHQHM25V8Av0MGM8GwskfjXCfo3wSt2IrvYYUs1tkA3lCGP6yO6ugGWKNxV+pFnUvN07kdktaVB73WxFeyq8aiu/aPZzl5EjMCnjihDRez+Dk3gdpewHmFomxk0L5I1IenKnLcTnwO0a2PZRvsW593LJ2gJSGRG6L9KeRic8/hc7dafJIVeHRXewYcJ92d09QjeDAl18GlKPwie5OCtPAA7lZg==
+    properties :
+     x : 6
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         // Si un document est déjà ouvert
+         SI gpclEditeur:EstOuvert() ALORS
+         	SELON Confirmer("Un document est déjà ouvert.","Voulez-vous le fermer ?")
+         		CAS Oui
+         			// Fermeture du document
+         			gpclEditeur:FermerDocument()
+         		CAS Non
+         		// Rien à faire, mais le document ouvert ne sera plus manipulable
+         		CAS Annuler
+         			RETOUR
+         	FIN
+         FIN
+         
+         // Création d'un nouveau document
+         gpclEditeur:NouveauDocument()
+         
+         // Ré-afficher la fenêtre dessus tout
+         FenEtat(FEN_Principale,DessusTout)	
+         
+         // Insertion de texte
+         gpclEditeur:InsérerTexte("Ceci est du texte inséré par programmation")
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_GRAS
+    identifier : 0x29db2168d878e4b3
+    internal_properties : CAAAAAgAAACTNvr/shMfHnTDWZApu1NpLwjFx+NINweeQN0T+HkuTUR2KYftS/Up4p4rqcCkn38DjE4eLRXB+eidHRyYIgvoKZud3rKC/9GzVN/CSS280EgHUIS1fiTIUkSvbIz73PrTshBg8oNTZ/hc8FZdNbGpsVJhCGEGslA8brc2KenROjMR9WZq2YJH2EESuAzDDK9bIWn8rWrEPyyP3iy/yRc16kJ7OPT/pglox06bucNL0q9k6edtafkD0Rb1eC9VeKezPpsM7JkPzK9ZX4X2ZuduhUHkMo4BXfy8qJuCORnWE5SXdn7I0TNIVmgaWA0oOLlDaGqTwu4MF1oGMi88KHvhnF6irG1fyERfvrrIStwUCDwAEeyFlnUgtM8FwnLu7ribwbn/VfsIbxaMyA9loB/rGE6n1ois1qSGf2I3JFQDDF+TkfzBDP6li56/pAhYxm0PljipSK+CX3rI34ggLJK+Vya3glfONGvief/BH/8mMcvzfGLgy7G6/UBRYJy6bmGtP5dYbAFrOnqfgriGLbIZ1Dv6PAR9REmuq1PUWQBVKP/IcX6Lrz9yY/Y0XVbv3IcYH401jQuN09ixVfXZCkcmpTmAo3ZuvEMJkvHYGuOIsbV1Qa6CcUe5JMBbno71n6BObQzE2JHiFanmVzsVxTbWKJT44v6+3+qvVCgpbjSw1BVEIarG5pTXhMC32qw1qg2Fp2IMQ9nZYp+J7qf+5/WpedL5wNLZ9Mky8CmUTh4UEp/Lnd6aNTM1WhRFknkodYufUb6pLHHiZ6fawhBWXsQWCJqwDO8uwctJGjpo0EvdbK4IIvMrsK1PyZoAZ1JOZ8T0SXDbJBtOMECNXnlpUzJmA7BuySQTTfRtGiBgs8zGuDYYk6OkOqQaVyRKZ4sexl+z98uPT4+a18D9GZe75l00R5tCjWwJQZDbKzPXT00azp3uMYbh4STXCrwb5EQOE+33g7qwV6f992D+FxLKGL0UqRLiInYk2YtLMUKSokWyFhroeAgs
+    properties :
+     x : 237
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAR4wfafeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LTqDBb1oBUoqFYspVnsE60EgOB85lr03qqQYoMx8MviQw6PWACF3N+5DzwNXd+pyjMSjik87bY=
+        code : |1-
+         
+         si gpclEditeur:DocumentActif() ALORS
+         	// Mettre en gras la sélection	
+         	gpclEditeur:RéglerStyle(iGras,"","","")
+         	// Réafficher la fenêtre dessus tout
+         	fenetat(FEN_Principale,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_FERMER
+    identifier : 0x29db2193dc528f2c
+    internal_properties : CAAAAAgAAACZFo1WaqPIukl8PE849RMgbzpOTHW+Z3n9aIl6+1CUuz/aN1OWP38Vj1iqU9IQMnF5Hms41bRYgKCtjGZN9Rx4XS5BCpoHJsxkxMm+p+crhvbR/0Y4c/gGh60ZEdjPHROR3qKABGhxjUJ1nWQig/aWR+CV8EC7dtSNnHD/yvT9GC88XAZ7gCKJBwTPTqdcTx5d7WfHGvdxq4ewbfaK+8thUBBwfUjVnFuDR5nxMjNROd4GD6k8zeni+uxj2Iq271eTWGBr8XSgvec5WnbREss9Fqm7GSOsqL+FnQkR8tBvquZd27vD+1SZIFu+4MWv9fzt26xCSCriIbujFf1mYhfLpNOWd1ZgjRFASmtqwDFOukF3J9PXdmNbn08noMUPnm70TZC3z0CWeIVWBbjGUzOSPJoXac88t+79AZEB1H3d7w3qkMhKyYKKULGHwVBPXE/IqZsMrffmb5013TopACQrngixs15X5pkOlqbRNpSXKzycnTlUsVGG2Z4L6tCjK5b8pP/JYlGwEAolwCUas4MYJQvlpQFbA38U3dHIVWHXNblMRnpS+n0kWIcIZf+mAFaCLnWtglTCUHDs4dCnMORc7g3sxdnIidUQYqxel5+boUi+MsfWg95wmZ+H0YIi1i74n+gf22UgqNHAdQS643fAUSxyAD7X5MNhJgATHcY66p1rlnJk+9ftkyHYzs4pC9QJKDA73rjMOsZ1aGtWik65TeBEgShfQNXGlFi0J+pBQUr9DqBAai+9+vQirGFyvktqT4X7v37BKiS7B3Cor1/A55CHa2ABEEaI5FFB7LTKNoKFtqVwImuNn/z9l8X19n9RDiHx1qjeNMhCLVaZgKu4T2V5+toBqe0NlpxuQmMKSk3lzz+d8nArUUBqEHD9SyLwo/wCQNomx7nmltONXOEYCk7FUNjWrblcb1SnPmj9zCqVBaNi7oGDlz8lmRcHehx90Ydy2cuvG/tjZQvkDHUtLyFvLg7k5pofemxcdEr2IG6p2e/c3fzZnaO/FsiZ895n3KdaY0S989Gzfdto7qqFDM329q1YNtHsJa6l6o0=
+    properties :
+     x : 90
+     y : 42
+     width : 27
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         // Ferme le document
+         gpclEditeur:FermerDocument()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : LIB_Titre
+    identifier : 0x29db21e4e6a3cb84
+    internal_properties : CAAAAAgAAADJ7VayWur8MG5w+7QxToBrayXToUKdgolb+jpY6Fev+943BGvQwVEt75iTk9yLQy2tSuN/FV/tMad68hOMH4n+2P07Df22+hZcWypmbcTLa82atB9ZzGlwwWnJhX+CTPV6zCuiMTo3v23E2nOUYHfWcHrVfjMoMYU3psaiERhfNzaRh/M7evSzxPc6UvBlcUQQ2dRdmoWcNCPLDlHc1zI93H4vK8JSZ/0AQ2mtIDSfHJJNFPFuLiFX8Ku7aVxLktBDk06PrtW6jXj8cOzx290QFjx9Eprpic8qrR4E1virzDZqR8+op2tUH7Jgd6D98pxX09I31cub2fkLxqnNnU758HfJ3eJZkNCUWF8mkifpeo2dICsXDEDkhizAY7oVsPs7hP2RqiaVc2MbOWKWmTq5bOYyD2J/VR3dOncoB3xgWf0P1EIjMMtN8w34o2DiLwih40bLStioRpxnXg59wyI9OERhAB1qZc9Xif6UsV+0FwgKBpqPG3Ptegx83wY6PlWYvUrF7XWXU/jl1jLnhE38ZTTbluGmySafpQyC+a+tzo6sA5ggCOWLYQ==
+    properties :
+     x : 6
+     y : 6
+     width : 218
+     height : 30
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_OpenOffice
+    identifier : 0x29db2240eca232c5
+    internal_properties : CAAAAAgAAAARmKj/LvNU1VjSuxn4Wk5rJpqXwOoE6x3KYClvnNqT45gy8RbketskIdJn1NcWydR2vTRLDzgwB+kA106FEAK4DJfzwFx/DpYP+JZGKIuZwSBqjHtMWTW9WhaSEqyN2ck5nmq/HceV9MOOiYwvp8nj9knJ1iBrVlRK+eYv9QDgH44rnI2pmW2Bx/j90Px4sWfxGYLToKt88j6p3jzf8qKZk30SVZtoLd+vTPtXyicMQoJVqkCZPBwWzwXmYxgWpc3bbK5Mbh2Oge/ep7tVk5+jd6Fl1DtRehgKhMYSKTwbsF/bGUU9NV6540qTeNJFPixs//S43YqvIuupCAs8ZOEqO6BYCK9mLcmyCqrEj+HkjUIbPnTyVbGued1gle4REl/PXKX9fCZ6YbvOgq33LwWb1LdgjGCh2Pnln8RVbDqYOqWIgiHQADBk1vkvWVB9/A1exlDLb+zW+cIdj2Z+6MDQyGBjJLDEevXuibw7Bxy+cxNlKsDOiZD6lugvRdJPMSxhBTQCA1D4MFzRC4KQBLNrNt2MnpU+8H5tbHgPll4Lx9dSjazv2nsnjx/+X6q8pKWGj336umr+f8Vjo3HKoTWe3gKg+5DGmsb2YHBXTMLptlCSxbWR/MjbuSqBJqQGZY7DyHZLLPtSBDpu4vEwjQqQomSoR0mtQxeMTqqMg8cGEw0+pPSf4BzhM3rZxLz+QOU8QzqQo9WfEpigRtFvLkulNKatjqRnefH6nWPI1UhMJkCNyWonds/Uxm2Cyiq23jhYPfkpuhNOf6albkGdeJoTfjQyONynoVqbGUG8Snk770QHOdPp/JOuJz7Ykjv78IQL9r56lfxsctAs9eSBSYxxtISb+zoNmebqgNdyZvt+NK09F450sS2RZ5xPf7CEO+jK9tss03ANec58SN5b0J59h1PaTaxmXirb8Jnw/b5cS5LAJyrcsILmDWa62+7Si38/8heUOoOaV7avuDmcXupD63zwKvUNxrD+DNkzwVQSjZOcmz3Y/nZZNw==
+    properties :
+     x : 36
+     y : 116
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1+
+         ExécuteTraitement(BTN_NOUVEAU,trtClic)
+        type : 18
+  -
+    name : IMG_MicrosoftWord
+    identifier : 0x29db2247ed054e8a
+    internal_properties : CAAAAAgAAADCb7p1r/wqJpSuNQm1Q/1BJq+vsWU5zNxY+XYfLUb2bNshoYDl2Q/w+GAUInwrhCLFw4tsSQGwWLKGQ56bnyhW17LjShL1gRwevgZn7eh8Thay//b6eqXW2F43CrJCpN1D+pzhmGBfxdIOg+wRJ4xDZdFswoBn5Urg28Tp/jfva5avJDsBxQAvyowXZ8o40cu3IjL8LVZEvSTq14cbuIzJa/6pJWmtvuFmcrPjHhhpj23mBUix8cEbacPBLKPZZG/HkBuwKXpYB1n+jqWTh5Lv891JN25KrUJ5Ppk+SEyioII7b0Dp5lcU0+uVmBprN/lnvspV0ute19nBRg1h4Z5rToy+28pIRTVzKOjqSkDB8a8oqW5O5myF2SPNjV3CMWQT0eVmPCYV/W+UEdQzj2UGsCta0QTlP0oTyOysyciYBTcy295nOUDHKoPyRaW25bYC85SZvGTQDiz+jqEoP7xsFXDfUshAH2kRp0lWXngtgaZZ43LS3k1qlhOMmKYg/A2XLL/pGKQbDupLyEyW/Ib8CTf2oZcF/UyjUIzuvlwUfRfzZwn1nmnexXiwH15SwHIEQpPIjeGHo4GvXWAtF0ZRcnvjtKIAmKXOIUQ6Uoy6sX8DYl4fKS9WLgurNU4Mti/4PCnu3PwdD1WSOXWA8qRT3nFEz/Un80YV6TzT7p+ZuNIFcavInth2hEBgnnKeqQnzSXE6yhfvI+FAuAzmpZoY6yIMUy2Z4Q2O8N2u1u1Zu4y1+B8EbiFW70SHtjG2gegwN5JOEeWlOFpvWXx/3g/HxjxTyuhCkNf4Qrgad9rqP99JLwgHBG/t7D4G4Y/q29AD4Qn7Z741tDHXmTfoe5zHToP/RqyUU79JHvKwo30bf2ySboXaWla+VFhqgX+J+Xbmf8n9RxOqsTqNmnVwMUKJyP8Imz9amerDPeM6VDK84wskOFpgRSMwl6hHxAtYZJepL7Ofhnh/BUYkTK7URLOmMqPzO0U003Y886ye8Hxu8WPIDAb5q8tK
+    properties :
+     x : 195
+     y : 116
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1+
+         ExécuteTraitement(BTN_NOUVEAU,trtClic)
+         
+        type : 18
+  -
+    name : IMG_MicrosoftWordGrise
+    identifier : 0x29db251f1abc6588
+    internal_properties : CAAAAAgAAAButYbbUQkDyT5jrLtjKdKkkErR/XSer5BoW8cn/BVE6Zd7gvQwR3u5BbRZP8bFCoUcQco99EpY20u2PaP7BlWhSTRAmllYtK/wTkcsBrc3d9xwCOrJY+CycTzIPpXtCN2lbEYE5cOvm7SJYKYTDaRx/R4N6h+iWMECJl6PkT0jp4oPV+LVkuRTO1EaJWuG/VbZ0/uPuLi0PErS1fu9cIg9X0UiOuNy7WUkmm1WpiQ2qrNUb4XQVhTojkIEgrio48jJkCOynCAgObaloBcJIKPFPg2vsnXl+fwTBDGBPAQYC3A+PkfNMvSP+e3AbxWsbnghZ6KJS5F/m/KWVYIryjtmagbpb+bY3wi3MlLmY+lS4dXSJ37U3lHhbtiZk8z1Sf0llCz+WoNB5gHuRHixuTunoVpNW+hgqmmIAZxEU39kK6ZTQwyvYrphwX2js/3+b91GBnqGU5a3+PPJfMRx8r7S2GBYvFbmzFAAfdhA0IKwY60DRPvxNLxLKxt5QXTp1rk6V5xmmO6h3MdUkNylv2ekUzmQcjHi+uETnJYcZpleMlj4UZe8AMN1rx7gv97zc8vqH4RRJ4olg3OAtWU8v98yqF/oJkTihUcQlF+00iBvTwqmM2nwv1P1qhC6gQaGNngdWpgJlWYX811kTJVZz/1rOB4GGIzxghwAouewA47ltP3+SNbj21ZuOrJejAN+fjV3QuBR3c6F1+uEhpI+A7pDOMQi2/SPOAmKjH4PytooKUky8okO4yPBKXkZtHWflfS1xCRfVWv7GvawVyJg4jk4N7Qok3Nar2Ahzv9rOlJW9skMHAmuZPKK3Q2VxvJXcPwslShQeSZQLJvlKlMw2CGf3PFDNA6vBl7HTFixG36eLrUtKNr9nohZwl7G1Ij/gPhoCisnbJN5UwdqtYMm1kwim3zsUeHGC2B7YLo/hFjJRoa8Jy8tpayu3iHgft/n08RMJxQmErzK/uoaOAGRtcSWxQa1Jg7k4prml1IzcI8tOSje/V3Pi/joNjrgSPvY
+    properties :
+     x : 407
+     y : 54
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_OpenOfficeGrise
+    identifier : 0x29db25221b886fa9
+    internal_properties : CAAAAAgAAABvk8oIsCAPLmve3FiwwDLwDlMhBr6+OzQMAMJa/gsnU+HgcP0gO766CFhA6jRQ953X1kD/MMa2OI2ttZNgpUszLrMVQUJmA56jT5n32vtRaAqfbnTW3TxlEoiaVlAkG5upAk34aySN+ROYBvhH14h0Q42xze5Vc//EdErMDc1hu/BgFJHIx7WP+elNKEfN0gjLHgdXQz1ozwNQrX1juje/bmpxLdXe89RewCRkCOcLK6B7YIb7TqWC04Pos2igFMFNUpdqylqlK7r94RYmoXR/dtg+VfgL84YOIH5gc/glkxhUZ8bUKnCpbU8Bd9qpqRDk7lScttHRjrjdFGpgstIyyUzhYNc69W0UTRkVAAxGqKMavhERM5cJxJZl1A1ZZVoU4j27//KTsIK4fz3/depVigpksU2hX8iWv1faRt5O4DehWOx1yviVa+eBy9ufPAWtcZaeeGxgENWAfkraaagGkz8aOOtUMh9kb+df6SXTy3aqqvSlBy3UfBZPxKnUYMpjczf8XBny2LWpd6e0GW9GHZfAooDCWKzVKpchIEWLAFpCIET1200jft7HNlMFdaxrKgbxx7syk5tNevoygZoENltJcsM68Y/eP7ab1zFh3qnAxxUDFM2T86bpcT0ivkQdNaDowxpgE1X8eKi1J4HTmAff2F++MdkguJgxixdNW9FifKyv7uG+9Cyr2TJn3jJrzcN0Vb9sE9lUvE5dv2PSs26MvscsVWcsu6fzsaXSEZVtAom1QlieOfKEOxPDcIjeuTSAmIwDR1fY0UUiCB+oeW6T5rG1vjkEeaLtf1s1e9u8lX4G/GhrBm/2x0Oht1vGmJ6/lZ8GrYERXhQi6xoyM5yZZfSLEA3Fjj1wyIjulsXOiAie3RzIjoaZSMrBB73VQ3cj7FtHpcgXo5JYzyJsLSdnH9qkAC1Oh00fGcxP5z3iYK71q2r4M+avNvVfC1D8Hjhd3+Be/QrFHj4KA1zSDl9K62pqKf2lsn/v/f+CwAnQcliw6w==
+    properties :
+     x : 407
+     y : 188
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_TEXTE
+    identifier : 0x29de19a67578b827
+    internal_properties : CAAAAAgAAAACg85iVscNifEA0JGbPtGsu42C1bAd18kKPFvf8DMKHRMD/q+JGdCYgn96PcErB3InqxdiOdzJ0CtMVNrDU9WJoCtk7LGvlq7gUgT+CnDS1xNhiGcg0ntr7BxOoyZaU4YLO5jz6gfXL3uROkGshuG7xHZKVQC1x1fk/RhpgqE8DTeckM1+b0nmwYkGCtrwSMYArEeKvg4iWUXh+SgUPY23xuINvwGM3dODzktSQmZFIHgv9dByajbBdGV2ZqAcvUDV2GG2FVczJskHqqILjAzdGKAuVTukn+p7VsSd5k+SC2Wz1jRKc1riuIGBdS0j316J4zCiHoIQNxu4YpZwNEamVypPNTKPnX8UnDrebjfkKlGpmcYSUmFdXHT3O/lQtGgPhn0Yv2J5o1iXUpnbhgCXA7XfEmd1KzfWZPvTq7PzF5yUBLQOwpdWn8VNnsKF749ovb0acIx4ka6NtDFZwqa6IAhnFOGj5N4h066Tc8kGxR7m8b0tdJQypB8amf7Pqbsa8a5+yvADUi960PJxdeskCeqmPfg6GJgnzNPAKE3Bl/2i/8fEICmP7UCs808EVFV0AYMpB1zNXx2V1cgq9100ibbu4Vt1xFJV+z4QjX48+waHpc+d1RpczgSg+VLlpNzYpoZqVNea7+jHdjTcqcqWNtldTRR8y4hw4QQio6PpJzeYSzZ5sPlgGg0nCPB1ypzRHuGfQkDKH93TRg3Yl5uuKfBo4NpD8HKay0NHpSAwCez5YwW1G94NrU6pOEDU0j6wzeFPJ/MU+gJFQUFHOfVmFa/h2OASTnvFDWC1KWwvhqPKRorzsIUDMizc6FJ1He1CLfFY3LQbS0gDuloLjGszMskIKOE8SRKMfnHWenI2LMy2A/LJ9tHUdNe0cjr7R4uGOACsHwBUkOILwtpeC5swed+5PveMQuQtk5qJW60MCDrp+MNZm9YbeEx4su02semaOsb/FNttZw4x0J27aqKwT1ZaMMWG3iRXzGGgx3o1tGK0g3Sdxg==
+    properties :
+     x : 129
+     y : 42
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         // Document ouvert ?
+         SI gpclEditeur:DocumentActif() ALORS
+         	// Variable
+         	sTexte est une chaine = Ouvre(FEN_Insertion)
+         	
+         	SI sTexte <> "" ALORS
+         		gpclEditeur:InsérerTexte(sTexte)
+         	FIN
+         SINON
+         	Erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x29da1aa639ed7f22
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options :
+   -
+     name : OPT_Menu
+     identifier : 0x29db61864f21563a
+     internal_properties : CAAAAAgAAABKAGpczOeJmi4tajuFEhWMEYAg+5b54tjlUJi/PQpHAr/TSWknKVpYrfxa4d2fMmIhfkOZ3eM6IXt75Kf/eECdQokT+D/skatnaOkoYuYyQUXE+DCYonBPryAh/PBMuweXvgRbJtjuWYnX80gxYPkEiJkVX7Q1JKuVYICzlJjxJ19BV5F6Vs+n76p9jQDmidRTN8kKhCKjJAWk86EMntXXooN+tq4lyI7DAEilAlUzBENlin/tGbB88mgOeW/Wj/tnMyKU1yr9hi9JVHweaPzhIu4txjUfEqcoBoIrc1o6+G/adfG0eAXnSesth12UwDFh5fO0gmR8EbUDr35P5kTF
+     options :
+      -
+        name : OPT_Nouveau
+        identifier : 0x29db61b8517d1aa3
+        internal_properties : CAAAAAgAAABD/2WVsqepd4kSjZYBWJNOlVgUen3r/FQIoMLakCpmDg6Y3DVQAGmnNvleRNjXL55zahgC4QAgALNLVnDdlUTEjPlmld2zV8pxyUXs+AgkTZeKdkR9z8DlVDBu0plQDGvKFY1n92qLxnUtYhPWULb1xHCuxb+icrMa6dzABkB1k55NF5oz6J1AvFeScVM0vJGPevE97lsj41QMH3i8w7frwS4FRA4m/LYndajkR9gkccnf67xhuhrxDeuS9Mx/0Wu6sV8z5uZZ655bRsYZvz3ZjtmgHJPmEHVEv1xQHAVyRMfk3z2ObVhttjJvErOCm8olc1urfZiNqOVWuaDLApknjaS4
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_NOUVEAU,trtClic)
+             
+            type : 32
+      -
+        name : OPT_Ouvrir
+        identifier : 0x29db61c251a44155
+        internal_properties : CAAAAAgAAABLDBRC5s9Plx18jhwTnB3gUn0ozkwzuQPwFdG6Lz3WPkQbTD/ixXifD/36JNyQk/vLNZ6uLhkU9A9LghXYi95dCCQ3V17YhVR+vw+eS6xyNVQz2tZ5hquzZBm/mFqt5jebpbrwwro/Zmp8wyI8c24121rmW1Sv5mUyVhEogcIuQXKhlaD04HkqBv6rX6GJbY2LGEUuRIHjEEp6dOwZQWQPozKjVfnOJH2+2k1By5TFEXTFEF97ALeKRmFM43TZWW+e/cJqCCHZ2qoxxy/N+urMyDIX641cPZkhktDnD9svYUvY3ZYRh9oFQhY29UUNkx1ubyY2rOv4JywsDxcHizQZOs4=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_OUVRIR,trtClic)
+            type : 32
+      -
+        name : OPT_Enregistrer
+        identifier : 0x29db7d851e50aabe
+        internal_properties : CAAAAAgAAAAaPW3iTMYufNQb9Xm3uHiDMbI7gXecOlbtDsuAL8mktttCbiYBxjbPZjbdyO7FrbtnWwbr7Qi6vKV73SYerxdo4dhMKkr/JqYC/2ZgXwWEyjtFkJhswrKLpxetS1s9AUtEU4iiVlDzIUbEWyY3cSPQoDKmk4JIViYMWG0nCFG9Wvhhy3EVZ0L1qNdq8CE3XMhOdv1Mrg4MaGZmJQ1KdKmqZBZ/kXLdAdPpc5B7Ayt+eCSpz58zFQNaZZvcl5q+5ZgXB2Fq/jfcPug3rPFpsAGkBYGwF8UXu0iMN96hQqIIJYAcD9wtLTTAAUmljsqqhHyHQLelNKRxSitbHkCYK4/oa/8=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            internal_properties : CAAAAAgAAAAhEyRvYyU6BtHat/gkL27/+UuOPBZ3ZzNhmLM++FVJkQteQCCNKt1RUplvprSKg7zJfDikJkrFGWHw24yhP8unDuYHajp3J2nLhfUjDxkt9TRut/6Tihm4u9uowyBI6BPSThKYN9LEhEpsncY=
+            code : |1-
+             
+             SI gpclEditeur:DocumentActif() ALORS
+             	// Enregistrer le document
+             	gpclEditeur:Enregistrer()
+             	
+             	// Réafficher la fenêtre dessus tout
+             	FenEtat(FEN_Principale,DessusTout)									
+             SINON
+             	Erreur("Aucun document n'a été détecté.")
+             FIN
+            type : 32
+      -
+        name : OPT_Enregistrer_sous
+        identifier : 0x29db7d8c1eb7c81e
+        internal_properties : CAAAAAgAAADKrYKWutFS9cX4ulFHdnkhDDxMf9uqvzAxdxbCU2yvzyPxHTx27imz9pNCXCxpfs8g3GDZUsjcS51MJIjTv+5GL/CVjKBT7+h31dAwr2MDMVoJZJy0e3g5UTwLoisRbTuAgNKpkmmmKJ17Ka5oziyqkk3rLZOVz4PfQFCk1pdn+N/YyMwkSMT96/Om3BUVINoi+B+E/vdjrfyicsZhUSKoOni8BGgrI7OmDgUzMwVyyJ1znF1jDXs6ACFpNLUpHzXwM795ExkVgluyPZBupQ+1bNQVScXDVoj+o/JLzMK9RUcG/4TRHi7r4sk4SJEG1DKGYqiYkIbb5SRZgMkUAARtmnY63FrPRTonRb6bqXnyIdxa
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             ExécuteTraitement(BTN_ENREGISTRERSOUS,trtClic)
+            type : 32
+      -
+        name : OPT_Imprimer
+        identifier : 0x29db6254570d79f0
+        internal_properties : CAAAAAgAAAAAu8EfFbq/L+3EjjRrtI34Qg0onuxbsQN4lZm6z+2CUmAX+IutJGVdWWskIqpeURUpa/yEvK+i+hF9AI+iFdBjWvmxb1rMcTxW0z/Wl7iu8Yzvalbt8i8zfC0PkL6ZqkN7OYrIjsbrLtIQm0KAT+LhAz7OA6gbSo3qyikoXYbSXaJfv4YmrmuAKOSNhaOH9yMlppfcrqddPgS4PiJTBxZVrXgV80PEzuuwwG9fNTonv0bDEu3F/jkA4M8GKdaXky2cw7hkEifj3DDXXVEP2JQa9oBFPT/iZyPfsN6ZG8+zha9kEeK1407RFlL6MSlZVwlyezoykAccM8C4o4NYWudO8QU=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_IMPRIMER,trtClic)
+             
+            type : 32
+      -
+        name : OPT_Fermer
+        identifier : 0x29db61c751cb5308
+        internal_properties : CAAAAAgAAABW2BPOpWA903pzB9A2rpsiEObJ3Dm8dwFJFtX/CfdVeNLpxpVMnkshp+nNwhC2nejDx3wAJL8wPJ4wnX8m0DsSAnTUUumVWvYitLT7/E+iHvXxKWUIobb00hqMj5NKpoUZ2JvmB+AUnWMWUheAgQKc+JAV45/ccGB1f2aGMgqu5JSG/dvXUI3P7jf1w3pq1m3ldJ6Mequ0SGcJ/eKtUkY2SmJER7K+hCqdBWeafF1pZpXF1S6rUvulBDE6X9+1AA1I2DRXYR7ZCSotMeoneTSXe6yy3ZUeRqeMQzvPXbbhoMqoVnV/FkI7lJjpWHVP+awjdWhrRbM02R6lVWmN
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_FERMER,trtClic)
+             
+            type : 32
+      -
+        name : OPT_Quitter
+        identifier : 0x29dc5a8b1d9c1462
+        internal_properties : CAAAAAgAAACVBke0lTNQn1Y8uD+ltCfb0eyCwrv4UtAsnT7cy3z+9ysJVfYxlH8Q+YPwLT7YPKh5OEx3WquucOuS0tDMZ0gC4MZh5DD4Xkivoa7UNBC84Yb6+ROzgNe1Jkzw2sslsMRptcwY3RcYhcJ04MrrhtnLogNMw5k5uvPmE+Tlh91c7XZq7YcbNoUNFzKrT3yAkWcF0FKeki9K2UBz/dbBPYIDevmVPRjRpr02KeTKrIVydIIojHJxVFcyWf4v/zOSLekVVsI3/w7Fof4QCwnqNEYi6ELAnXrewRNroLKhTScHCbcklgF4yxxzyJjAWJqDMQceK9iv
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             Ferme()
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : OPT_Edition
+     identifier : 0x29db622a5657d5c0
+     internal_properties : CAAAAAgAAAAh4F3smeOUpjIrDBZ1lydOFX65cwww/kT5UrbeJeyAgYbP61YNHB9vnOuyWTLBVwqhtkEfRgzyALj6UHO/l6Q+bMZlcNgnDbAdksREI1iQUFOvVUMaQ98MqZZs8zckiIr6rPEldhBXL8choYZ+HQ5mIX+DseJPOW0y8TzvxFgTDyajiGasFAea0XT8C4mMsFpM/qoKq/vwhF516jhIexsvnFiW6vdONmdCnEKXn4DGzixmF8bjNYaULr0lPjpyYBh8hKkjBocVXpbR1dJF98SEI3UBorOKyfAO9dQ0/WGjtZ710Eeizj3Pz5goIJJKDVMMx5z5GX6VqgeYadYeyx4uIw==
+     options :
+      -
+        name : OPT_Copier
+        identifier : 0x29db62335681fba8
+        internal_properties : CAAAAAgAAABfdZChBlggFuGEUhiQVrDVBWUpRtFOuHAF1UBE6dBosmg5d8mX4T17x/KBNYnmun3lWPrkxO9VEcau19dJTiqc/7YB6i0nUqs6TbgT/4FTFLFNldHMmwa4eWSYSAigBDvX4HtpFQI4mRjsf5+MOkZ7MC8XaRuTUc+YkKnq4C5zDWNJ5wJb5xWF+rs4QnN7OAv25lnG/GN4uDTQdvZRyb9vv5AKEyzXAgigOOtUXWa61+O72PLQA1oWfML0Y9XUhZlz30o+y/dnYNCsxeSBOFWG30glIdaGn666UT9bow+6L9+Svsxn09NzUcpKTUL+Wxzqcst21mF71lOlosaX3U/S
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             ExécuteTraitement(BTN_COPIER,trtClic)
+            type : 32
+      -
+        name : OPT_Coller
+        identifier : 0x29db624356bf3a18
+        internal_properties : CAAAAAgAAAC1m4aXnPYCNAPaMI4GUI7LC3sftKcEcgYXe9ayF+qO2AYfZT89nx9JCaDHs32i1pUJLC7oyJsBhb46X4MFAn5cI9JlflFDrh96IYinsx0XRP1REf2QTyqEcWDotLSE+BM7jM9VqSaMLajwRytgrqp7DLu7jecHvVN4BJE+BAqfJZ0TJQQFaZMftP3WnJX5tuEIYDfgxjW2Akai3Fhzn12NWaooNY4hyEr6yuFeL8Tw3YX1hoTyfShwvtySjT+KC2+tkYAI/YHVykJWc2YDhoOk+WLbO+iUQfAYP011BY3EdYU41CYZYWWFp5CAFxQMVRrocMkIQP8deDHDQGBp67m4
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             
+             ExécuteTraitement(BTN_COLLER,trtClic)
+            type : 32
+      -
+        name : OPT_Couper
+        identifier : 0x29db624856e64bbc
+        internal_properties : CAAAAAgAAAB0thcIdqeOeDrWy1V8jq5tVA45wmbDttezSCwdv10Z7+WGgFEpDEBJ3T4Zd5KcTJKR4l5qW/DrFgzd3BbO5HuFii/XcQBf+gyBAFgcWcXLmaxe6fYBtSgkoEpte6Vt+WtXAlAz4Y5ZTCFUKr5gg5X5bfNtRyvFxz/PwhRyZg/XKy6zGNQhX+Cg2n21EN6gZJSKLfEJajwQscEiBpLAfxcouyBEnwV+7jT0QbNz0URGjjrPmgM1IUpQRs3+qkFH0ne9JNv/riNskRNUqIUlqnjvyGU58Bq8snmv686bAkmmpHbmv3i3BU4ufOAhhXe0GwnBugkSRr1alcNLE7rUsOZ77g==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_COUPER,trtClic)
+            type : 32
+      -
+        name : OPT_Rechercher
+        identifier : 0x29db62855bca3c46
+        internal_properties : CAAAAAgAAADEj5XDeVOH57OARJYHuI921OGODBAf0cfeCRsU+zlSarCNl4E+3IWOFErfjVF9UUXlnZjQ0l18ZJnl0gUC1QoZtAKLu/xOz24KTTPm5T6qLdR95oLHBPUNfFNLsGxPxnfbp4JgRKxFRN4CE1YaMa79e/RSt3pNuMfCEP2wy4zKFaaCmK0PRUQr5SNO/IS2OErW8Uirz35GEdHf/6HU1seU2h/yBkjHO2LRu1Sycs0UukPaH8Dyid6P5f43+Md2RGytMiljF9J4G5VOxiggt7FlV3OOVALnoijYpcfwAPqIEIBHkuHKlnuMs71L4P6UkDAHpu8NyY41vtGP4E58BrOavUk=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             
+             ExécuteTraitement(BTN_RECHERCHER,trtClic)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : OPT_Insertion
+     identifier : 0x29db61a05097bd31
+     internal_properties : CAAAAAgAAACPzY6zq2B600K7X4pGujddKY6UV3YFjNTtEY0Tdzn9BaVhjNlr1N6W8UnLiWncHGhJzRpnDh/BQbFBiI4LHv+j60Pe93AOnyPPT+P72HALp2bl1NboXVOxCRC1HifVmNv2I6DqmDT8V0Q0YomEImcFde6BVLF97Sa2Qf6tT9DUXCzBA1I2RPU+wG0oYuHp9b1AvOslsym7q0ZlZfnIojuP1YVbNBO0cuv8GPcsQ1WWcHyPiN2A1YQFR99/MO7AAmV2tEaFpUSfHpK1hHJqp8pAlYZ5zRW/9Jc7JmHbBY9Lm6ZmjxKeSgePdb3BJUm8lo/q0UEdgdf07hwNTCmgd+9+hpI=
+     options :
+      -
+        name : OPT_Image
+        identifier : 0x29db61a650c1d2fb
+        internal_properties : CAAAAAgAAADxm9KTFLQytcHb1nwFQIo4cYJrVLxEGpZ+sYT72JdPllaWwChNJPoV/+jRHxBvA/P0SgGO/9rgdxMz366c4+l0R7R/N455TLsYc/iUjFrQPLUWkwaNswLu7tTq38IkJ5BQp4gbTbeFWZHgt7UKhxlOdmNxYx0es21HiJMlsP0uDnVz6YOUX1rP4qWEO3hjj3DvitXZplwJDN06QlPeYy89u/UzeBB04v17x3/wR6/vlkU/TiZynf4BCkg4K7LnKJsSy0UBk7NBUfQxvZrm/WOMNw3pPDuUbomM7XTn/pQoIdVtKbrSHtRub2RI9I2NDFqRnlI=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             
+             ExécuteTraitement(BTN_IMAGE,trtClic)
+             
+            type : 32
+      -
+        name : OPT_Texte
+        identifier : 0x29db61ae50f2f45e
+        internal_properties : CAAAAAgAAABJshvoYZViqoFQ7HPJUNuNc7x05a79XBWdtO9vqSEYGfMnOXKO+OZ061LyBG0BSBFaxqpMSk8CXx5YbrwImg77Ilo97SOesasN1qEGzWVD7N8jO8Xre9/GNo7lp7uyJf/TC1akI7YK4m4lo9Jj4+JPkv/9xtmMrlNa5xuEhibNh1IeHQ9jLXuSCGzgRdUjIK74vLzCmGmSm2Z7vs8i5CLsaeRKisa9iHdpSGfQ7Flgwh7jTdid7Q2mIPQs0Xff2QR8rL2ulKLOYX0FuSMqqUZUsi640xxQFqR7jBqV92bW+Dx8QdMkF1jfdIS8pc571UPKX4Rz
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             ExécuteTraitement(BTN_TEXTE,trtClic)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAACyIsUT0RgnMpwxS7GLbHvFCUlEW5VG9vOT28TBsX9JJ6LTQN5ZVD0rrCgoO6yy3wnbXk1zOjffj4vMAgfMY3X0J2zQvmgAzVtGU8n9RJiF1E7gOXM7blLSXM6LXo40wnATKYgKvkH1gwLpYofsfEn4vVrBnUOCe4rHR7tBHqXmaeJNUFyNxAxwGg==
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+   -
+     internal_properties : CAAAAAgAAAC/ln5qi5GukRkG0yFKOqJb3lBeLDGJ+nn/7KJoZHOXv3yBFS3q+T87dAt8IRMmFY4D5w3Lxm9sf4JnCyipPZtuQKyaEI9kArAY2RdKOt5RyGYLrhYYpKJNgIk44EQqNa84ZMM3OXyQT/2niSI/3gi8t/b+kpT5+m4HZEjtz/kwMw==
+     code : |1+
+      
+      // Récupère une instance
+      gpclEditeur = cEditeur.EditeurInstance()
+      
+      // Editeur disponible ?
+      Si gpclEditeur = Null ALORS
+      	Erreur(<§$0000§>)
+      	FinProgramme()
+      FIN
+      
+      // selon l'éditeur, on grise une image afin d'indiquer que l'autre éditeur est indisponible
+      SELON gpclEditeur..Classe
+      	CAS cMicrosoftWord:
+      		IMG_OpenOffice = IMG_OpenOfficeGrise	
+      		IMG_OpenOffice..grisé = vrai
+      	CAS cOpenOfficeWriter:
+      		IMG_MicrosoftWord = IMG_MicrosoftWordGrise			
+      		IMG_MicrosoftWord..Grisé=vrai
+      FIN
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1+
+      
+      
+     type : 11
+   -
+     code : |1+
+      
+      
+     type : 12
+   -
+     code : |1+
+      
+      
+     type : 17
+   -
+     code : |1+
+      
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x19da1a930040322b
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+  strings :
+   -
+     text :
+      fr-FR : Nous n'avons détecté aucune installation de Microsoft Word ou de OpenOffice sur cet ordinateur
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Principale.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

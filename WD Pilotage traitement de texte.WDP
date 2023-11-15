@@ -1,0 +1,149 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Pilotage traitement de texte
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Le projet a pour but de proposer une classe unique pour piloter un logiciel de traitement de texte (Microsoft Word ou Open Writer)
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Pilotage traitement de texte
+    internal_properties : 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
+    configuration_id : 6525402232463915318
+    type : 1
+    generation_name : WD Pilotage traitement de texte.exe
+    version :
+     version : VI200030B
+     internal_generation_version : 2
+     autoincrement_version : false
+    icon_filename : .\icone.ico
+    language : 1
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAABfK3zmDU7vA9tjyn2YdvNKJwV6WjjcBzKxCwMZWi4xP0kgwVjZolNqWxB7p/ySqdVDl2m8vO7IWqJQ3A==
+ elements :
+  identifier : 0x4c47058307aa9cc0
+  elements :
+   -
+     name : FEN_Insertion
+     identifier : 0x49db631e00008e35
+     internal_properties : CAAAAAgAAABv60dbaBUdzpl97eOU0DcBfRhEVGiZnaZKaXi5a9TGco6ia4SGch5UtmBapm5iHpJ6+g==
+     physical_name : .\FEN_Insertion.wdw
+     type : 2
+   -
+     name : cMicrosoftWord
+     identifier : 0x49d9c1d000067e89
+     internal_properties : CAAAAAgAAADNSSV5RjN7pLNTt8my9xVrYyBudrJ+VDmvOUa7snefoaOtWKdgWPiu3EawCIh4APDYWA==
+     physical_name : .\cMicrosoftWord.wdc
+     type : 4
+   -
+     name : WinDevMessageBox
+     identifier : 0x4850090500bd4d2d
+     internal_properties : CAAAAAgAAAC7l+MnhMFpcnEFLHjuhmc9d3rGTgIjaMeKmcI3uVbEHCjUf878BMEwHgT++ro2wjaepg==
+     physical_name : .\WinDevMessageBox.WDW
+     type : 2
+   -
+     name : cOpenOfficeWriter
+     identifier : 0x49d9c1c60005566f
+     internal_properties : CAAAAAgAAACjn5uPPGlBWmXJOV8gXyfR6fqEVFL7TZGmrvX8qEdXoV+dTCP6xmogQvzm0lKOal6mrg==
+     physical_name : .\cOpenOfficeWriter.wdc
+     type : 4
+   -
+     name : cEditeur
+     identifier : 0x49d9c1af0002fd33
+     internal_properties : CAAAAAgAAACoppCMO2BIUxzwVHYPN7gmrvOdXWWJHcKnLzyFVsPJT/V5kv0T7ZPLOePd21uVbWOttQ==
+     physical_name : .\cEditeur.wdc
+     type : 4
+   -
+     name : FEN_Rechercher
+     identifier : 0x49db1d8d0000d441
+     internal_properties : CAAAAAgAAAAXc3+jAH01NoFVtcuszQ9ZTRpAAMKzM/x2Crc6mmWxb5mbTrFuSvas3lhCvka6RroCAg==
+     physical_name : .\FEN_Rechercher.wdw
+     type : 2
+   -
+     name : Procedures globales de WD Pilotage traitement de texte
+     identifier : 0x49d9c08d00009228
+     internal_properties : CAAAAAgAAABm7E5SUQ4myZZmxkQ9f/JMxJUjOy0mK7+u5NsW3CNp7xERPkHd24U9r2lTrXVrF4lz8w==
+     physical_name : .\Procedures globales de WD Pilotage traitement de texte.wdg
+     type : 7
+   -
+     name : TEST_cMicrosoftWord
+     identifier : 0x4c7d152c015c068c
+     internal_properties : CAAAAAgAAACkooyoF0zkh1A0qCpDbuC+2v2ZWWXG9XZKrRTdScbOUvYEK1TPKdeP/SeRbzepUUexsQ==
+     physical_name : .\TEST_cMicrosoftWord.wxt
+     type : 17
+   -
+     name : FEN_Principale
+     identifier : 0x49da1aa80000876f
+     internal_properties : CAAAAAgAAABWPL7iwb72+UYWdhRtgc6YDFkLw+NAuKa2mf7c/C1vqVfbDHOtC7XtHxmDfQX7h3lDww==
+     physical_name : .\FEN_Principale.wdw
+     type : 2
+   -
+     name : TEST_cOpenOfficeWriter
+     identifier : 0x4c7d1540015e5759
+     internal_properties : CAAAAAgAAACOlOY6Cbb+MT7ezkw1i9qc7J3roxWWSR6mttfSED/dO8Vt4i3l0301V8E7hQ3DvzGbmw==
+     physical_name : .\TEST_cOpenOfficeWriter.wxt
+     type : 17
+   -
+     name : WinDevDialogBox
+     identifier : 0x4850090e00c47258
+     internal_properties : CAAAAAgAAACc+vQgn8Rsf8yAqwyZ+NcbALGPB6IGV7CPvLRVDRv512GB2we4AD6vmY8J978xyT+JiQ==
+     physical_name : .\WinDevDialogBox.WDW
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAABseimUYz4VdXZ8hGsGFqoxLDfDcHkNZdBf0iQg2FQcqmw5VrO2lryVMt3efm9RagPlXJBReauIsX3ZdB8=
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAANK99aT578pqrY5vHKk6We4QlF1n4phI60i5kiJ2ajIXqY8ANw+K+Ev0qF5XyF7/X5nkR47wx/A9HQAdXUtV09qS9IbkPPF7nTWSaUTtcQidvXNTL45w==
+     code : |1-
+      
+      // Variable globale de la fenêtre
+      gpclEditeur est un cEditeur dynamique = Null
+      
+      CAS EXCEPTION:
+      	Erreur(<§@00000000000000000000§>)
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Pilotage traitement de texte
+     identifier : 0x4c47058307b59d5c
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : "Erreur : Vérifier que l'éditeur de texte est toujours en exécution"
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

@@ -1,0 +1,885 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cMicrosoftWord
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19d9c1b9053222eb
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAAAIYzCMxz+0DrOq9MQ6AvOitHNNFtC0FcRyopP6tAQEE0akgqR7alhBmEfECG8qqLnRD7psm+kIa+WSoQee/44PlX8+IO87n3kApy1tG0AqHMgG4s3fFKfJmF1todb1RQTX/w9fFkHThRyh7WfU3Fp5jBJ/lQnV+XxvPaN+BWdoykwAc44m9E3stVzPG9fBUpQgfoN/r3bCK7/D+w+UghXtGRfNXAqjEwECUdx7Ml5hKRyRZ44eDu6ujG+1vimFEXfevguvTxjIMMpDl69JvytHodKDY3hiA0CYPSK17ZhuDEsoKWPiKEA8mxGXJVYVikRxETESxX94UhTQhjAmhhRbRK5/vWunoiG27nBZkvfc3xoY
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACjlbrhXcsXRs9c7ypED+Apw91cLIhNs/ufEhPguCWP3+FMTjgDoLH9+LOT5OjGzd7XOorA4DQ6/IbF8OWYWCY89Qk8oz20UBCsNirEDpqgclPhQBuys97/yBCVbE8pnwwdza95GgwWCszuH0Q=
+     code : |1+
+      
+      //
+      // Implémentation de l'interface cEditeur pour Microsoft Word
+      //
+      cMicrosoftWord est une classe
+      	hérite de cEditeur
+      	
+      	PRIVE
+      		m_sDocEnCours est une chaine // Document en cours
+      Fin
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     internal_properties : CAAAAAgAAACOozqCzUV5/gr06YY2jyjycUuNTy4sPgohFU69WpKDNN1NJA5zFSAIYvksGGrbjRmwty0dOVpt5JNxir3oD/2ia9PkYj1CXDsc2jHnXmCLJVJy6dP6K4wNcVQTB5XgbgJSc+XusviVW8QfHqWGEhgSIaylb+uhM18GWpXshXTt1WABpne2VnhQLu7cdxfdrGr40ug+L/mgmmsTzcXnnDBsLv+kBN753eXs1Ri7amHRO6IXAnlGnMJMMMbp3NxwY//fnRsTQnjBiVPwxxTrCm54DapkMdg5v1tIj4E1nFyFu2o=
+     procedure_id : 1862732921294758635
+     type_code : 27
+     code : |1-
+      Procédure Constructeur()
+      
+      // On teste la présence de Word et on récupère sa version
+      nVersion EST UN entier
+      nVersion = WordVersion()
+      
+      SI nVersion = 0 ALORS
+      	FinProgramme(<§$000f§>,Faux)
+      	RETOUR
+      FIN
+      
+      SI nVersion < 8 ALORS
+      	FinProgramme(<§$0010§>,Faux)
+      	RETOUR	
+      FIN
+      
+      // si Word n'est pas déjà alloué
+      SI :m_oApplication = Null ALORS
+      	// Y a t il déjà un Word de lancé ?
+      	:m_oApplication = ObjetActif("Word.Application")
+      	SI :m_oApplication = Null ALORS
+      		// Il n'y avait aucun Word déjà ouvert, on en alloue un 
+      		:m_oApplication = allouer un objet OLE "Word.Application"
+      	FIN
+      FIN
+      
+      // Word visible
+      :m_oApplication>>Visible = Vrai
+     type : 589824
+   -
+     name : Destructeur
+     internal_properties : CAAAAAgAAADVJcrxxjMb7fCNr97zO1x8Om0V/56dyWzdqGa3ikO/NB6bI6/Tmh3GIMLZDxWHui0ruq6sI7gHFY4OR9GftEWkQAhCIw1eF+KvjN3V2/1SNdpDVG8iJNNM6y62RXgUaCGrtrTLNeudaj9cPDgHsAuKhxlI2inDnlnzfnrjwhZcpfAIZTa8BDa/DSRhuQ/lIH8hS9eu
+     procedure_id : 1862732921294824171
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+      Ancetre:Destructeur()
+      
+      SI :m_oApplication <> Null ALORS
+      	// On quitte Word
+      	QUAND Exception dans
+      		:m_oApplication>>Quit(Faux,Faux,Faux)
+      		Multitâche(-30)
+      	FAIRE 
+      		// L'application peut être déjà fermée
+      	FIN
+      	
+      	// On libère le pointeur
+      	libérer :m_oApplication
+      	:m_oApplication = Null
+      FIN
+      
+     type : 655360
+   -
+     name : Coller
+     internal_properties : CAAAAAgAAACox036/ruh1mni5c7s2LMY+147/OGCrHYbXoOMjac8ojgSur410G9pznfoh3y/jd+V0r6OnAIZUOR9XLDMmlAEK+4fkR6o/hpFMrLvp+j10z4slEvkGtmSHRwMzSJylvOfOiC/ZwnN4pc8En6t2v3oZ2EAqDnjrjGLqjzDDJykRBHZun/bNWcmRP9MtgDcSCeyP+gEcIEkSDgJ8Tbvly7Yqpol0g==
+     procedure_id : 1862817300138091957
+     type_code : 12
+     code : |1-
+      // Résumé : Coller dans le document le contenu du presse papier
+      // Syntaxe :
+      //Coller ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Coller()
+      //
+      PROCEDURE VIRTUELLE Coller()
+      
+      // on colle le contenu du buffer
+      QUAND EXCEPTION DANS
+      	// Méthode "Coller" de Word
+      	:m_oApplication>>Selection>>Paste()
+      FAIRE
+      	RETOUR
+      FIN
+     type : 458752
+   -
+     name : Copier
+     internal_properties : CAAAAAgAAAB/Qxn1hNUXt/wpZbI/fyT8yo11QRhvN2IhJPjbxv9HZE6z5xW5OOPIqIpH6wkn8p27Opoi4V6RUy4mRc07zN083HxOWSOEIfBzSPrSPmIJvkMclaD9gUAzIu17UqP5r/qcj8lIlFQOnbK/fcn22XITuAJ9x/isfwBqqRsUaT+nUh0FIstjLV8mlMNiUtY4EZau7XEE
+     procedure_id : 1862817407512299638
+     type_code : 12
+     code : |1-
+      // Résumé : Copie le texte sélectionné
+      // Syntaxe :
+      //Copier ( [<bVersPressePapiers> est booléen])
+      //
+      // Paramètres :
+      //	bVersPressePapiers (booléen - valeur par défaut=0) : Le texte sera stocké dans le presse-papier si Vrai
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Copier(Vrai)
+      //
+      PROCEDURE VIRTUELLE Copier(bVersPressePapier est un booléen = faux)
+      
+      // On copie la sélection
+      QUAND EXCEPTION DANS
+      	// Méthode "Copier" de Word
+      	:m_oApplication>>Selection>>Copy()
+      	
+      	Si bVersPressePapier ALORS
+      		VersPressePapier(:m_oApplication>>Selection>>Text)
+      	FIN
+      FAIRE
+      	RETOUR
+      FIN
+     type : 458752
+   -
+     name : Couper
+     internal_properties : CAAAAAgAAADY6hzW8fQFPsRrGIKm0EpfjgA/dIXDhWLvEErBTWGU2CYNi5qcN4MRfZ27OrMaiFrn9FqlYdZF1fgIZ4j3rBw+/QGP3bJ7DK8bbn01XfBAQqLKqbuYtz2J+OlmyyiTkIp5hY3Bi3RhzWZ9ulZnpV0N53jVkkXW2Kr0fd6DgPk+mjCBkFqUh4a06gvTYyvIN9MFSYhF/Q==
+     procedure_id : 1862817476231858004
+     type_code : 12
+     code : |1-
+      // Résumé : Coupe le texte sélectionné
+      // Syntaxe :
+      // Couper ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE VIRTUELLE Couper()
+      
+      // On fait un "couper" de la sélection
+      QUAND EXCEPTION DANS
+      	// Méthode "Couper" de Word
+      	:m_oApplication>>Selection>>Cut()
+      FAIRE
+      	RETOUR
+      FIN
+     type : 458752
+   -
+     name : Enregistrer
+     procedure_id : 1862817544951416198
+     type_code : 12
+     code : |1+
+      // Résumé : Enregistre le document courant
+      // Syntaxe :
+      // Enregistrer ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Enregistrer()
+      //
+      PROCEDURE VIRTUELLE Enregistrer()
+      
+      // on enregistre le document en cours
+      :m_oApplication>>ActiveDocument>>Save()
+      
+     type : 458752
+   -
+     name : EnregistrerSous
+     internal_properties : CAAAAAgAAAD7SZm0h9H0uO1XKxdgpSMDl2N6iWmQCLcoYIihwzA07FuLkylWeSb0hs7OVY1hoWtypSwTu0hBN9AayT/h/y1kYa6IhlwwzwB4JYjuj+idmwtYmXq0aZGpXA8/kFwrHBhj1Jlwe3iJorEzIzf336froV0xP3/mHOO3dS3yWJFq4XnJo8IF4LRBOga7GATzY7ANy/DeE/iHz7Hh1N3xECHpjgujz2AVPhk14q7bzFB4Ue/EaA==
+     procedure_id : 1862817648030655505
+     type_code : 12
+     code : |1-
+      // Résumé : Enregistrer un document sous un nom particulier
+      // Syntaxe :
+      //EnregistrerSous ( [<sCheminComplet> est chaîne])
+      //
+      // Paramètres :
+      //	sCheminComplet (chaîne) : Chemin (optionnel) où sera enregistré le document
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // EnregistrerSous("C:\Mes Documents\Texte.rtf")
+      //
+      PROCEDURE VIRTUELLE EnregistrerSous(sCheminComplet est une chaine <utile> = "")
+      
+      // Variable
+      sNomDocument EST UNE CHAINE
+      
+      // Sélection ou création d'un fichier Word
+      sNomDocument=fSélecteur("","",<§$0001§>,...
+      <§$0002§>+TAB+"*.DOC","DOC",...
+      fselCrée+fselExiste)
+      
+      // Aucun fichier sélectionné
+      SI sNomDocument="" ALORS RETOUR
+      
+      // On sauve le document
+      QUAND EXCEPTION DANS
+      	// on sauve le document
+      	// 2ème paramètre wdFormatDocument = 0 (format Word classique)
+      	:m_oApplication>>ActiveDocument>>SaveAs(sNomDocument,0)
+      	:m_sDocEnCours=sNomDocument		
+      FAIRE
+      	RETOUR		
+      FIN
+      
+      // Ce document devient le document en cours
+      :m_sDocEnCours = sNomDocument
+     type : 458752
+   -
+     name : EstModifié
+     procedure_id : 1862817927203594167
+     type_code : 12
+     code : |1+
+      // Résumé : Indique si le document a été modifié
+      // Syntaxe :
+      //EstModifié ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE VIRTUELLE EstModifié()
+      
+     type : 458752
+   -
+     name : EstOuvert
+     procedure_id : 1862818008808057858
+     type_code : 12
+     code : |1-
+      // Résumé : Indique si un document est ouvert
+      // Syntaxe :
+      //[ <Résultat> = ] EstOuvert ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : // Vrai si ouvert, sinon Faux
+      //// Exemple :
+      // EstOuvert()
+      //
+      PROCEDURE VIRTUELLE EstOuvert()
+      
+      SI m_sDocEnCours <> "" ALORS
+      	RENVOYER Vrai
+      SINOn
+      	RENVOYER Faux
+      FIN
+     type : 458752
+   -
+     name : FermerDocument
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1862818077527615677
+     type_code : 12
+     code : |1-
+      // Résumé : Ferme le document courant
+      // Syntaxe :
+      //FermerDocument ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Fermer()
+      //
+      PROCEDURE VIRTUELLE FermerDocument()
+      
+      // on ferme le document en cours
+      QUAND EXCEPTION DANS
+      	// On ferme la fenêtre active
+      	:m_oApplication>>ActiveWindow>>Close(Faux)
+      FAIRE
+      	RETOUR
+      FIN
+      
+      // il n'y a plus de  document en cours
+      :m_sDocEnCours=""
+      
+      CAS EXCEPTION:
+      	// Ne rien faire, le document a peut être été fermé manuellement
+     type : 458752
+   -
+     name : Imprimer
+     internal_properties : CAAAAAgAAAAqfDrgqK61gCLX+Cjo6FKvoGANCPu1vbxtDHonr3HcgKwhnZpSFcffu0kPSAWqKLJZxNQ9GzD1swb8bzpNIIi652nFwVQBCM3pAqqiIN9Taavd1ET3tj6O/c43gPvC64FeYCiOXn/2XvfOBwMq5JTgOFMAo3QluZPttjeQ62hROUGQ9//3GgMxF9iIHIoLohIvc6K7iw==
+     procedure_id : 1862818137657237216
+     type_code : 12
+     code : |1+
+      // Résumé : Imprime le document courant
+      // Syntaxe :
+      //Imprimer ( [<nNbCopies> est entier [, <sListePage> est chaîne]])
+      //
+      // Paramètres :
+      // 	nNbCopies (entier - valeur par défaut=1) : Nombre de copies
+      //	sListePage (chaîne) : Liste des pages
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Imprimer()
+      //
+      PROCEDURE VIRTUELLE Imprimer(nNbCopies est un entier <utile> = 1, sListePage est une chaine <utile> = "")
+      
+      // on imprime le document en cours
+      QUAND EXCEPTION DANS
+      	// On appelle la fonction d'impression de Word
+      	:m_oApplication>>Application>>PrintOut()
+      FAIRE
+      	RETOUR
+      FIN
+     type : 458752
+   -
+     name : InsérerImage
+     internal_properties : CAAAAAgAAAACJNLonl5haDb/TOTcDJZjRCjdvIdtEeyZ7F6zW8XQvKiJ7T6mJSuvd5kz/NmWRBZlHHQZd/Cx25p0S84J/Kz+w4HlveApZK1lanw4WulRZ1kLomJJwLQQM6QRBm10eYdk9p4E8IkMeB3kUfnMZhI+tkkO4R4/30Xr1IneJeIXlw9u/eUJDIGbheaagjzdEOg3e7qTow==
+     procedure_id : 1862818193491825267
+     type_code : 12
+     code : |1+
+      // Résumé : Insère une image dans le document
+      // Syntaxe :
+      //InsérerImage ( [<sCheminComplet> est chaîne])
+      //
+      // Paramètres :
+      //	sCheminComplet (chaîne) : Chemin de l'image
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // InsérerImage()
+      //
+      PROCEDURE VIRTUELLE InsérerImage(sCheminComplet est une chaine="")
+      
+      // Variable
+      sCheminImage est une chaine
+      
+      // On insère une image à l'emplacement du curseur
+      SI sCheminComplet ~= "" ALORS
+      	sCheminImage = fSélecteurImage(fRepEnCours(),"","Sélectionner une image.","JPEG (*.JPG)"+ TAB +"*.jpg"+ RC +"BMP (*.BMP)"+ TAB +"*.bmp")
+      SINON
+      	sCheminImage = sCheminComplet
+      FIN
+      
+      // Image sélectionnée ?
+      SI sCheminImage <> "" ALORS
+      	// Vérification de la sélection
+      	QUAND EXCEPTION DANS
+      		:m_oApplication>>Selection	
+      	FAIRE
+      		Info(<§$0005§>)
+      		RETOUR
+      	FIN
+      	
+      	QUAND EXCEPTION DANS
+      		:m_oApplication>>ActiveDocument>>Shapes>>AddPicture(sCheminImage, Faux, Vrai,*,*,*,*,:m_oApplication>>Selection>>Range())
+      	FAIRE
+      		RETOUR	
+      	FIN
+      FIN
+     type : 458752
+   -
+     name : InsérerTexte
+     procedure_id : 1862818262211383446
+     type_code : 12
+     code : |1+
+      // Résumé : Insère du texte dans le document
+      // Syntaxe :
+      //InsérerTexte (<sTexte> est chaîne)
+      //
+      // Paramètres :
+      //	sTexte (chaîne) : Texte à insérer
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // InsérerTexte("Ceci est du texte")
+      //
+      PROCEDURE VIRTUELLE InsérerTexte(sTexte est une chaine)
+      
+      // on insère une ligne à l'emplacement du curseur
+      :m_oApplication>>Selection>>Text=sTexte
+     type : 458752
+   -
+     name : NouveauDocument
+     internal_properties : CAAAAAgAAAC8YadZTtbHFGEq/t4ViC1Ja/FCeZ+KiTbrMX/Rbs1LbE/KVSjKAM8x7JvanLCqz6GdpPcn4ciQ9+ljKVJrlCl0KVYaSwqEmlAj9Ps/1e8RTlkyUtlDBGTTYGSEn2N4aeu04YwtqD2Un/LeVjy8BKjqjkYsNGT5YbZOvOKjEcpDMizStqs23XSBMc3SNhnCCWFOub834Laujts7R1o04aEWK3P/
+     procedure_id : 1862818326635973765
+     type_code : 12
+     code : |1-
+      // Résumé : Nouveau document
+      // Syntaxe :
+      //NouveauDocument ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // NouveauDocument()
+      //
+      PROCEDURE VIRTUELLE NouveauDocument()
+      
+      // on crée un nouveau document
+      QUAND EXCEPTION DANS
+      	// Ouvre un document vierge
+      	:m_oApplication>>Documents>>Add()
+      FAIRE
+      	//si on a une exception de levée cela veut dire que word n'est plus actif, il faut donc recréer un objet OLE, et refaire un add du document
+      	:m_oApplication = allouer un objet OLE "Word.Application"
+      	:m_oApplication>>Documents>>Add()
+      	// Word visible
+      	:m_oApplication>>Visible = Vrai
+      FIN
+      
+      // Ce document n'a pas encore de nom
+      :m_sDocEnCours = ""
+     type : 458752
+   -
+     name : OuvrirDocument
+     internal_properties : CAAAAAgAAADA7+UT1h7rkAuMO1jqKuVifWQNMru14PrhtFd+L9G2RA5MoN4h5IcdRG2EQVqZo/XfgIBSzHJpZDb3zG4GVKrmzQRF4cpEBrK7sFL1Oao3fbQmUx4RpVALasXDEKOxw44OYRP+4AC4DzA5GRn+qS6vqjwbxxrCiQK4qzcyEWd9Q5SMrV6EfKIrGSjn1YWnZmHA5R6uGk/2YtZ/zxhhFW/vQjJNOg==
+     procedure_id : 1862818386765595414
+     type_code : 12
+     code : |1-
+      // Résumé : Ouvre un document
+      // Syntaxe :
+      //[ <Résultat> = ] OuvrirDocument ( [<sCheminComplet> est chaîne])
+      //
+      // Paramètres :
+      //	sCheminComplet (chaîne) : Chemin du document
+      // Valeur de retour :
+      // 	booléen :     // Vrai si OK, sinon Faux
+      //// Exemple :
+      // Ouvrir()
+      //
+      PROCEDURE VIRTUELLE OuvrirDocument(sCheminComplet est une chaine="")
+      
+      // on ouvre un document
+      // sCheminComplet est le document à ouvrir (facultatif -> sélecteur)
+      
+      SI sCheminComplet="" ALORS
+      	// Sélection ou création d'un fichier Word
+      	sCheminComplet=fSélecteur("","",<§$0008§>,...
+      	<§$0002§>+TAB+"*.DOC","DOC",...
+      	fselOuvre)
+      	
+      	// Aucun fichier sélectionné
+      	SI sCheminComplet="" ALORS RENVOYER Vrai
+      FIN
+      
+      QUAND EXCEPTION DANS
+      	// On ouvre le document passé en paramètre
+      	:m_oApplication>>Documents>>Open(sCheminComplet)
+      FAIRE
+      	RENVOYER Faux
+      FIN
+      
+      // Ce document devient le document en cours
+      :m_sDocEnCours = sCheminComplet
+      
+      RENVOYER Vrai
+     type : 458752
+   -
+     name : RechercherRemplacer
+     internal_properties : CAAAAAgAAAAIpy3YtGPdHkEKLcYU4IvgkwZzdAnkOEbLBvNUGadwHmCqrqaN8Bvh1hc4HxDfaSsl0mJOHAJNAHzd3IggcpQYU357Gbb4uloFchLf81gZv9bE5u1CRPOkk25+v9iswJk9AKIBTZNfrI3OhOiTPJcGBceiQpfNkBPZdNZ1SiauYg/nXOE5FzkA4ileoDYWcK+65wBcSGkMcPCR6d53uyq6ivqFcg==
+     procedure_id : 1862818455485088291
+     type_code : 12
+     code : |1-
+      // Résumé : Recherche et remplace un mot par un autre
+      // Syntaxe :
+      //RechercherRemplacer (<sMot> est chaîne, <sMotBis> est chaîne)
+      //
+      // Paramètres :
+      //	sMot (chaîne) : Mot recherché
+      //	sMotBis (chaîne) : Mot qui le remplace
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // RechercherRemplacer("mot1","mot2")
+      //
+      PROCEDURE VIRTUELLE RechercherRemplacer(sMots est une chaine, sMotBis est une chaine)
+      
+      // On appelle la fonction rechercher/remplacer de Word
+      // sMots est la chaine recherchée
+      // sMotBis est la chaine qui va remplacer l'autre
+      
+      // vérification de la sélection
+      QUAND EXCEPTION DANS
+      	:m_oApplication>>Selection	
+      FAIRE
+      	Info(<§$0005§>)	
+      	RETOUR
+      FIN
+      
+      QUAND EXCEPTION DANS
+      	:m_oApplication>>Selection>>Find>>Execute(sMots,Faux,Vrai,Faux,Faux,Faux,Vrai,1,Faux,sMotBis,2)
+      	//   1 : WdFindContinue 
+      	//   2 : WdReplaceAll 
+      FAIRE
+      	RETOUR	
+      FIN
+     type : 458752
+   -
+     name : Sélectionner
+     procedure_id : 1862818532794583327
+     type_code : 12
+     code : |1-
+      // Résumé : Sélectionne du texte
+      // Syntaxe :
+      //Sélectionner (<nNbCarac> est entier)
+      //
+      // Paramètres :
+      //	nNbCarac (entier) : Nombre de caractères à sélectionner
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Sélectionner(5)
+      //
+      PROCEDURE VIRTUELLE Sélectionner(nNbCarac est un entier <utile>)
+     type : 458752
+   -
+     name : SélectionnerTout
+     procedure_id : 1862818618694013923
+     type_code : 12
+     code : |1-
+      // Résumé : Sélectionne tout le texte du document
+      // Syntaxe :
+      // SélectionnerTout ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // SélectionnerTout()
+      //
+      PROCEDURE VIRTUELLE SélectionnerTout()
+      
+      :m_oApplication>>ActiveDocument>>Content>>Select()
+     type : 458752
+   -
+     name : Disponible
+     internal_properties : CAAAAAgAAABl138w8TDHRH0rxw+pzBGguTiWjE+o/Kxzuukd/EUS5M5KihallbCg3pw+gyXxUdniBwINXRxbTyQ8Ua0BX936zWTGeC6g5Ty4O8CUS6ThpRsqy3CO1cNBGG6chQmQsbWOLxJVcEWc9xrWRAhAkHQ0CMROMHj/MwiYFGqHPb5HwlgsFFdybU/qtyVQjbEIA1lPDgaOZ391p+Q6YIimnZaTQjB6O4IWfEdjqOC9F+iU9yU61g==
+     procedure_id : 1863108606299460178
+     type_code : 12
+     code : |1-
+      // Résumé : Indique si Microsoft Word est disponible
+      // Syntaxe :
+      //[ <Résultat> = ] Disponible ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : // Vrai si disponible, sinon Faux
+      //// Exemple :
+      // Disponible()
+      //
+      Procédure GLOBALE Disponible()
+      
+      // Variables locales
+      sCle, sSousCle 	sont des chaînes
+      nVersion 			est un entier 	= 0
+      bCléUser			est un booléen	= Vrai
+      sValeur 			est une chaine
+      
+      // Teste la présence d'Office
+      sCle = RegistrePremièreSousClé("HKEY_CURRENT_USER\Software\Microsoft\Office\")
+      SI sCle ~= "" ALORS 
+      	// Teste la présence d'Office
+      	sCle = RegistrePremièreSousClé("HKEY_LOCAL_MACHINE\Software\Microsoft\Office\")
+      	bCléUser = Faux
+      FIn
+      
+      // Si Office n'est pas présent sur la machine, Word ne peut pas être présent
+      SI sCle ~= "" ALORS RENVOYER Faux
+      
+      // Si Office est présent sur la machine: teste la présence du programme
+      TANTQUE sCle <> ""
+      	// Première sous clé du programme
+      	sSousCle = RegistrePremièreSousClé(sCle+"\Word\")
+      	// Si le programme est trouvé, on récupère sa version
+      	SI sSousCle <> "" ALORS
+      		// Ne conserve que la version la plus récente
+      		nVersion = Max(Val(ExtraitChaîne(sCle,1,"\",DepuisFin)),nVersion)		
+      	FIN
+      	
+      	// Clé suivante
+      	sCle = RegistreCléSuivante(sCle)
+      FIN
+      
+      SI nVersion <> 0 ALORS
+      	// Test si l'exécutable est bien présent
+      	SI bCléUser = vrai alors
+      		sCle = "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\" + nVersion + ".0\Word\Options"
+      		sValeur = RegistreLit(sCle,"PROGRAMDIR")
+      	SINON
+      		sCle = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\" + nVersion + ".0\Common\InstallRoot"		
+      		sValeur  = RegistreLit(sCle,"Path")
+      	FIN	
+      	
+      	
+      	si fFichierExiste(CompleteRep(sValeur) + "WINWORD.exe") ALORS
+      		RENVOYER Vrai
+      	SINON
+      		RENVOYER Faux
+      	FIN
+      SINON
+      	RENVOYER Faux
+      FIN
+     type : 458752
+   -
+     name : RéglerStyle
+     procedure_id : 1863172889107968872
+     type_code : 12
+     code : |1-
+      // Résumé : Change le style d'écriture
+      // Syntaxe :
+      //RéglerStyle ( [<sStyle> [, <sPolice> [, <nTaillePolice> [, <nCouleurPolice>]]]])
+      //
+      // Paramètres :
+      //	sStyle : Gras, souligné etc...
+      //	sPolice : Nom de la police
+      //	nTaillePolice : Taille de la police
+      //	nCouleurPolice (valeur par défaut=-1) : Couleur de la police
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure VIRTUELLE RéglerStyle(sStyle,sPolice,nTaillePolice=0,nCouleurPolice=-1) <multisyntaxe>
+      
+      // Vérification de la sélection
+      QUAND EXCEPTION DANS
+      	:m_oApplication>>Selection	
+      FAIRE
+      	Info(<§$000b§>)	
+      	RETOUR
+      FIN
+      
+      SELON Vrai
+      	CAS sStyle = iItalique: // Style italique
+      		SI :m_oApplication>>Selection>>Font>>Italic = Vrai ALORS
+      			:m_oApplication>>Selection>>Font>>Italic = Faux
+      		SINON
+      			:m_oApplication>>Selection>>Font>>Italic = Vrai
+      		FIN
+      	
+      	CAS sStyle = iSouligné: // Style souligné
+      		SI :m_oApplication>>Selection>>Font>>Underline = Vrai ALORS
+      			:m_oApplication>>Selection>>Font>>Underline = Faux
+      		SINON
+      			:m_oApplication>>Selection>>Font>>Underline = Vrai
+      		FIN
+      	
+      	CAS sStyle = iGras: // Style Gras
+      		SI :m_oApplication>>Selection>>Font>>Bold = Vrai ALORS
+      			:m_oApplication>>Selection>>Font>>Bold = Faux
+      		SINON
+      			:m_oApplication>>Selection>>Font>>Bold = Vrai
+      		FIN
+      		
+      	CAS nTaillePolice > 0:// Taille de la police
+      		:m_oApplication>>Selection>>Font>>Size = nTaillePolice	 
+      		                     
+      	CAS sPolice <> "" :    // Police
+      		:m_oApplication>>Selection>>Font>>Name = sPolice
+      	 
+      	CAS nCouleurPolice <> -1: // Si une couleur de police est précisée
+      		:m_oApplication>>Selection>>Font>>Color = nCouleurPolice
+      FIN
+     type : 458752
+   -
+     name : WordVersion
+     internal_properties : CAAAAAgAAABgvVN0Oujp6g8nmqLmxRmnFUVisPzBLTRprSk5JIupHF06ZQxCBs87mgfwDGL8OV0vMONP3baQdUfPz8LhUj/s9y6S/14+fvp9TIEHk1Xj4mP5mwKU6U9cDdN1TNDZjog7aOWmoRIvGE9xm/V1wUULaampUelyoBcDh9+0Gs+0JxMJL8SfWveSGngP9/oUvHc4S+d1clE21lvcxoUZqiaqXy8j
+     procedure_id : 1863196618798890626
+     type_code : 12
+     code : |1+
+      // Résumé : Renvoie la version de Microsoft Word sur le poste courant
+      // Syntaxe :
+      //[ <Résultat> = ] WordVersion ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	entier : // Numéro de version
+      //// Exemple :
+      // WordVersion()
+      //
+      Procédure PRIVE WordVersion()
+      
+      // Variables locales
+      sCle, sSousCle SONT DES CHAINES
+      nVersion EST UN entier = 0
+      
+      // On teste la présence d'Office
+      sCle = RegistrePremièreSousClé("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\")
+      
+      // Si Office n'est pas présent sur la machine, Word ne peut pas être présent
+      SI sCle~="" ALORS RENVOYER 0
+      
+      // Si Office est présent sur la machine, on teste la présence du programme
+      TANTQUE sCle<>""
+      	// Première sous clé du programme
+      	sSousCle = RegistrePremièreSousClé(sCle+"\Word\")
+      	// Si le programme est trouvé, on récupère sa version
+      	SI sSousCle<>"" ALORS
+      		// On ne conserve que la version la plus récente
+      		nVersion = Max(Val(ExtraitChaîne(sCle,1,"\",DepuisFin)),nVersion)
+      	FIN
+      	// Clé suivante
+      	sCle = RegistreCléSuivante(sCle)
+      FIN
+      
+      RENVOYER nVersion
+     type : 458752
+   -
+     name : DocumentActif
+     procedure_id : 1863198487150601291
+     type_code : 12
+     code : |1-
+      // Résumé : Pour savoir si un document est actif
+      // Syntaxe :
+      //[ <Résultat> = ] DocumentActif ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen :   // Vrai si Actif, sinon Faux
+      //// Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure VIRTUELLE DocumentActif()
+      
+      RENVOYER (:m_oApplication>>Selection <> Null)
+     type : 458752
+   -
+     name : Rechercher
+     procedure_id : 1866504954954338051
+     type_code : 12
+     code : |1+
+      // Résumé : Recherche une chaine de caractère dans le document
+      // Syntaxe :
+      //Rechercher (<sTexte> [, <bVersLeHaut> [, <bDepuisDebut>]])
+      //
+      // Paramètres :
+      //	sTexte : Texte à rechercher
+      //	bVersLeHaut (valeur par défaut=0) : Sens de la recherche (Vrai si Recherche vers le haut)
+      // 	bDepuisDebut (valeur par défaut=1) : Vrai si Recherche depuis le début
+      // Valeur de retour :
+      // 	Aucune
+      //// Exemple :
+      // Rechercher("texte",Vrai)
+      //
+      Procédure VIRTUELLE Rechercher(sTexte,bVersLeHaut=Faux,bDepuisDebut=Vrai)
+      
+      SI bDepuisDebut ALORS
+      	:m_oApplication>>Selection>>GoTo(1,1,"1")	
+      FIN
+      
+      :m_oApplication>>Selection>>Find>>ClearFormatting()
+      :m_oApplication>>Selection>>Find>>Forward=PAS bVersLeHaut
+      :m_oApplication>>Selection>>Find>>Text=sTexte
+      :m_oApplication>>Selection>>Find>>MatchWildcards=OLEVrai
+      :m_oApplication>>Selection>>Find>>Execute()
+      
+      SI :m_oApplication>>Selection>>Find>>Found = 0 ALORS
+      	:m_oApplication>>Selection>>GoTo(1,1,"1")
+      	:m_oApplication>>Selection>>Find>>Execute()	
+      FIN
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x19d9c1b9052f22eb
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible d'enregistrer le document.
+     index : 0
+   -
+     text :
+      fr-FR : Enregistrer sous...
+     index : 1
+   -
+     text :
+      fr-FR : Document Word (*.DOC)
+     index : 2
+   -
+     text :
+      fr-FR : Impossible de fermer le document.
+     index : 3
+   -
+     text :
+      fr-FR : Impossible d'imprimer le document.
+     index : 4
+   -
+     text :
+      fr-FR : Vous devez d'abord sélectionner du texte.
+     index : 5
+   -
+     text :
+      fr-FR : Impossible d'insérer l'image.
+     index : 6
+   -
+     text :
+      fr-FR : Impossible d'ouvrir un nouveau  document.
+     index : 7
+   -
+     text :
+      fr-FR : Sélectionnez un document...
+     index : 8
+   -
+     text :
+      fr-FR : Impossible d'ouvrir le document.
+     index : 9
+   -
+     text :
+      fr-FR : Impossible d'exécuter le Rechercher/Remplacer.
+     index : 10
+   -
+     text :
+      fr-FR : Vous devez d'abord sélectionner du texte.
+     index : 11
+   -
+     text :
+      fr-FR : Impossible d'appliquer la police.
+     index : 12
+   -
+     text :
+      fr-FR : Vous devez d'abord sélectionner du texte.
+     index : 13
+   -
+     text :
+      fr-FR : Impossible d'écrire la ligne.
+     index : 14
+   -
+     text :
+      fr-FR : "Word n'a pas été installé sur cette machine, vous ne pouvez pas utiliser cette classe !"
+     index : 15
+   -
+     text :
+      fr-FR : "Pour utiliser cette classe, vous devez avoir Word 97 ou supérieur !"
+     index : 16
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
+associated_test :
+ name : TEST_cMicrosoftWord.wxt
